@@ -35,7 +35,7 @@ runAct:
 	$(POETRY) shell
 
 runChecks:
-	$(POETRY) run lefthook run pre-commit --all-files
+	$(POETRY) run lefthook run pre-commit --all-files -f
 
 runDocs:
 	$(POETRY) run mkdocs build -f configs/dev/mkdocs.yml -d ../../public
