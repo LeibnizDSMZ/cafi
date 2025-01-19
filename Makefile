@@ -17,7 +17,7 @@ docs: setup
 	$(POETRY) install --with docs --without test,dev
 
 setup:
-	git lfs install
+	git lfs install || echo '[FAIL] git-lfs could not be installed'
 	pyenv install $(PYV) -s
 	pyenv local $(PYV)
 	curl -sSL https://install.python-poetry.org | python3 -
