@@ -71,7 +71,7 @@ pre-commit:
             stage_fixed: true
           - name: pretty-format-json
             glob: "*.json"
-            run: pretty-format-json --autofix {staged_files}
+            run: pretty-format-json --autofix {staged_files} || echo "json formatted"
             stage_fixed: true
           - name: mixed-line-ending
             run: mixed-line-ending -f auto {staged_files} || echo "fixed mle"
