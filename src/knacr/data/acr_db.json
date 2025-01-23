@@ -1274,6 +1274,9 @@
       "CIRM:CF"
     ],
     "active": true,
+    "catalogue": [
+      "https://www.cirm-fungi.fr/details/42/{id}"
+    ],
     "code": "CIRM:CF",
     "country": "FR",
     "gbif": "316a147d-49ad-440b-90fc-e46845e044d6",
