@@ -2,17 +2,14 @@
 name = "knacr"
 version = "0.7.0"
 description = """This project acts as a registry for \
-biological resource centers (BRC) used acronyms."""
+acronyms used by culture collections."""
 readme = "README.md"
 authors = [{ name = "Artur Lissin", email = "artur.lissin@dsmz.de" }]
 license = "MIT"
-keywords = ["python", "data", "brc", "acronym"]
+keywords = ["python", "data", "culture collection", "acronym"]
 repository = "https://github.com/LeibnizDSMZ/knAcr"
 requires-python = ">=3.13,<4"
-dependencies = [
-  "pydantic >=2.10,<3",
-  "requests >=2.32,<3"
-]
+dependencies = ["pydantic >=2.10,<3", "requests >=2.32,<3"]
 
 [project.scripts]
 acr_db = "knacr.main:run"
