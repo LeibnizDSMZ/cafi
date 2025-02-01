@@ -1,3 +1,4 @@
+from collections.abc import Iterable
 from importlib import resources
 import json
 from typing import Any, Callable
@@ -44,7 +45,7 @@ def _catch_expected_err[
 ](loader: Callable[P, T]) -> Callable[P, T]:
     def load_f(*args: P.args, **kwargs: P.kwargs) -> T:
         version = CURRENT_VER
-        if len(args) > 0 and isinstance(args, list):
+        if len(args) > 0 and isinstance(args, Iterable):
             v_2: list[Any]
             v_1, *v_2 = args
             if isinstance(v_1, str):
