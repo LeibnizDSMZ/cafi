@@ -1,8 +1,8 @@
 import json
 import pytest
 
-from knacr.errors.custom_exceptions import ValJsonEx
-from knacr.library.loader import parse_acr_db, parse_min_acr_db, parse_regex_db
+from cafi.errors.custom_exceptions import ValJsonEx
+from cafi.library.loader import parse_acr_db, parse_min_acr_db, parse_regex_db
 
 
 pytest_plugins = ("tests.fixture.data",)

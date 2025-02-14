@@ -31,7 +31,7 @@
     "../docker-compose.yml",
     "dev.docker-compose.yml"
   ],
-  "name": "knacr",
+  "name": "cafi",
   "postAttachCommand": "make dev",
   "remoteUser": "devu",
   "runServices": [

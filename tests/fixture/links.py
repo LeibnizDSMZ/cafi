@@ -1,6 +1,6 @@
 import pytest
 
-from knacr.container.acr_db import CatArgs
+from cafi.container.acr_db import CatArgs
 
 
 @pytest.fixture

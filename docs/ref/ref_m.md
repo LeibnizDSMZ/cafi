@@ -1,5 +1,5 @@
-# Known Acronyms - knAcr
+# Collection acronyms for identification - cafi
 
-::: knacr
+::: cafi
     options:
         show_submodules: true

@@ -5,18 +5,18 @@ from typing import Any, Callable
 import warnings
 
 import requests
-from knacr.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
-from knacr.constants.versions import CURRENT_VER
-from knacr.container.fun.acr_db import create_acr_min_db
-from knacr.errors.custom_exceptions import ReqURIEx, ValJsonEx
-from knacr.errors.custom_warnings import LoadWarn
-from knacr.library.validate import (
+from cafi.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
+from cafi.constants.versions import CURRENT_VER
+from cafi.container.fun.acr_db import create_acr_min_db
+from cafi.errors.custom_exceptions import ReqURIEx, ValJsonEx
+from cafi.errors.custom_warnings import LoadWarn
+from cafi.library.validate import (
     validate_acr_db,
     validate_catalogue_db,
     validate_min_acr_db_schema,
     validate_regex_db,
 )
-from knacr import data
+from cafi import data
 
 
 def _load_data_from_file(db_name: str, /) -> bytes:
@@ -27,12 +27,12 @@ def _load_data_from_file(db_name: str, /) -> bytes:
 def _load_data[
     T: (ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T)
 ](version: str, db_name: str, create: Callable[[Any], T], /) -> T:
-    knacr = "https://raw.githubusercontent.com/LeibnizDSMZ/knAcr"
-    req = f"{knacr}/{version}/src/knacr/data/{db_name}.json"
+    cafi = "https://raw.githubusercontent.com/LeibnizDSMZ/cafi"
+    req = f"{cafi}/{version}/src/cafi/data/{db_name}.json"
     if version == CURRENT_VER:
-        print("[KnAcr] loading from local file")
+        print("[CAFI] loading from local file")
         return create(json.loads(_load_data_from_file(db_name)))
-    print("[KnAcr] downloading from github collection")
+    print("[CAFI] downloading from github collection")
     if (res := requests.get(req, timeout=60)).ok:
         con = res.json()
         return create(con)

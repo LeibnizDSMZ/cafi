@@ -1,10 +1,10 @@
 import json
 from unittest.mock import MagicMock, patch
 import pytest
-from knacr.constants.versions import CURRENT_VER, STABLE_VER
+from cafi.constants.versions import CURRENT_VER, STABLE_VER
 
-from knacr.errors.custom_exceptions import ValJsonEx, ReqURIEx
-from knacr.library.loader import (
+from cafi.errors.custom_exceptions import ValJsonEx, ReqURIEx
+from cafi.library.loader import (
     _load_data,
     load_acr_db,
     load_min_acr_db,
@@ -20,7 +20,7 @@ pytest_plugins = ("tests.fixture.data",)
 
 
 class TestLoader:
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_acr_db_success(self, req: MagicMock, load_fix_acr_db: bytes) -> None:
         resp = MagicMock()
         resp.ok = True
@@ -31,7 +31,7 @@ class TestLoader:
         except (ValJsonEx, ReqURIEx) as val_ex:
             pytest.fail(f"acr data malformed - {val_ex.message}")
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_acr_db_fail(self, req: MagicMock) -> None:
         resp = MagicMock()
         resp.ok = False
@@ -39,7 +39,7 @@ class TestLoader:
         with pytest.raises(ReqURIEx):
             _load_data("never_tag", "acr_db", parse_acr_db)
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_acr_db_current_success(self, req: MagicMock) -> None:
         resp = MagicMock()
         resp.ok = False
@@ -49,7 +49,7 @@ class TestLoader:
         except (ValJsonEx, ReqURIEx) as val_ex:
             pytest.fail(f"acr data malformed - {val_ex.message}")
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_min_acr_db_fail(self, req: MagicMock) -> None:
         resp = MagicMock()
         resp.ok = False
@@ -57,7 +57,7 @@ class TestLoader:
         with pytest.raises(ReqURIEx):
             _load_data("never_tag", "acr_db", parse_min_acr_db)
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_min_acr_db_success(
         self, req: MagicMock, load_fix_acr_db: bytes
     ) -> None:
@@ -70,7 +70,7 @@ class TestLoader:
         except (ValJsonEx, ReqURIEx) as val_ex:
             pytest.fail(f"acr data malformed - {val_ex.message}")
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_regex_db_fail(self, req: MagicMock) -> None:
         resp = MagicMock()
         resp.ok = False
@@ -80,7 +80,7 @@ class TestLoader:
                 "never_tag", "regex_db", lambda reg_db: parse_regex_db(reg_db, {}, True)
             )
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_regex_db_success(
         self, req: MagicMock, load_fix_regex_db: bytes, load_fix_acr_db: bytes
     ) -> None:
@@ -94,7 +94,7 @@ class TestLoader:
         except (ValJsonEx, ReqURIEx) as val_ex:
             pytest.fail(f"regex data malformed - {val_ex.message}")
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_catalogue_db_fail(self, req: MagicMock) -> None:
         resp = MagicMock()
         resp.ok = False
@@ -104,7 +104,7 @@ class TestLoader:
                 "never_tag", "catalogue_db", lambda reg_db: parse_catalogue_db(reg_db, {})
             )
 
-    @patch("knacr.library.loader.requests")
+    @patch("cafi.library.loader.requests")
     def test_load_catalogue_db_success(
         self, req: MagicMock, load_fix_catalogue_db: bytes, load_fix_acr_db: bytes
     ) -> None:

@@ -2,9 +2,9 @@ from typing import Any, Callable, Final
 import re
 
 from pydantic import ValidationError
-from knacr.constants.types import ACR_DB_T, CCNO_DB_T
+from cafi.constants.types import ACR_DB_T, CCNO_DB_T
 
-from knacr.container.acr_db import (
+from cafi.container.acr_db import (
     ACR_MIN_CON,
     CCNO_DB_CON,
     CCNO_DB_KEYS,
@@ -12,9 +12,9 @@ from knacr.container.acr_db import (
     AcrDbEntry,
     ACR_DB_KEYS,
 )
-from knacr.container.fun.acr_db import check_uri_template, create_acr_db, create_ccno_db
-from knacr.container.fun.format import url_to_str, uuid_to_str
-from knacr.errors.custom_exceptions import ValJsonEx
+from cafi.container.fun.acr_db import check_uri_template, create_acr_db, create_ccno_db
+from cafi.container.fun.format import url_to_str, uuid_to_str
+from cafi.errors.custom_exceptions import ValJsonEx
 
 
 _ACR: Final[re.Pattern[str]] = re.compile(r"^[A-Z:]+$")

@@ -1,7 +1,7 @@
 from importlib import resources
 import subprocess
 import pytest
-from knacr import data
+from cafi import data
 
 
 @pytest.fixture
@@ -22,9 +22,9 @@ def load_fix_catalogue_db() -> bytes:
         return fhd.read()
 
 
-def _get_data_from_main_branch(data_name: str, /) -> bytes:
+def _get_data_from_main_branch(data_name: str, proj: str = "cafi", /) -> bytes:
     sub_proc = subprocess.Popen(  # noqa: S603
-        ["git", "show", f"origin/main:src/knacr/data/{data_name}.json"],  # noqa: S607
+        ["git", "show", f"origin/main:src/{proj}/data/{data_name}.json"],  # noqa: S607
         shell=False,
         stdout=subprocess.PIPE,
         stderr=subprocess.PIPE,
@@ -32,6 +32,8 @@ def _get_data_from_main_branch(data_name: str, /) -> bytes:
     )
     out, err = sub_proc.communicate()
     if not out or err:
+        if proj != "knacr":
+            return _get_data_from_main_branch(data_name, "knacr")
         pytest.fail(f"could not read from main {data_name} {err!s}")
     return out.encode("utf-8")
 
