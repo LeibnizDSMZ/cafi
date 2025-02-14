@@ -1,3 +1,14 @@
+## v0.8.0 (2025-02-14)
+
+### Feat
+
+- rename project to cafi
+- add CIRM-BRFM catalogue
+
+### Fix
+
+- correct args check to iterable
+
 ## v0.7.0 (2025-01-17)
 
 ### Feat
