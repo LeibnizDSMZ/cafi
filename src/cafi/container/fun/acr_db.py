@@ -2,11 +2,11 @@ from collections import defaultdict
 from re import Pattern
 import re
 from typing import Any, Callable, Final, Sequence, Sized
-from knacr.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
+from cafi.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
 
-from knacr.container.acr_db import AcrDbEntry, AcrChaT, CatArgs
-from knacr.container.fun.format import url_to_str
-from knacr.errors.custom_exceptions import ValJsonEx
+from cafi.container.acr_db import AcrDbEntry, AcrChaT, CatArgs
+from cafi.container.fun.format import url_to_str
+from cafi.errors.custom_exceptions import ValJsonEx
 from pydantic import HttpUrl
 
 

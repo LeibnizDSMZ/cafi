@@ -1,6 +1,6 @@
-# Known Acronyms - knAcr
+# Collection acronyms for identification
 
-This project acts as a registry for biological resource centers (BRC) used acronyms.
+This project serves as a registry for acronyms used by culture collections.
 
 ## Documentation
 

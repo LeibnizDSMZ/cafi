@@ -1,9 +1,9 @@
 import json
 
-from knacr.container.acr_db import CatArgs
-from knacr.container.links import LinkLevel
-from knacr.library.catalogue import create_catalogue_link, create_ccno_links
-from knacr.library.loader import parse_acr_db
+from cafi.container.acr_db import CatArgs
+from cafi.container.links import LinkLevel
+from cafi.library.catalogue import create_catalogue_link, create_ccno_links
+from cafi.library.loader import parse_acr_db
 
 
 pytest_plugins = ("tests.fixture.data", "tests.fixture.links")

@@ -1,4 +1,4 @@
-from knacr.container.acr_db import AcrDbEntry
+from cafi.container.acr_db import AcrDbEntry
 
 
 type ACR_DB_T = dict[int, AcrDbEntry]

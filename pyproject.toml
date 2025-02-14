@@ -1,5 +1,5 @@
 [project]
-name = "knacr"
+name = "cafi"
 version = "0.7.0"
 description = """This project acts as a registry for \
 acronyms used by culture collections."""
@@ -7,12 +7,12 @@ readme = "README.md"
 authors = [{ name = "Artur Lissin", email = "artur.lissin@dsmz.de" }]
 license = "MIT"
 keywords = ["python", "data", "culture collection", "acronym"]
-repository = "https://github.com/LeibnizDSMZ/knAcr"
+repository = "https://github.com/LeibnizDSMZ/cafi"
 requires-python = ">=3.13,<4"
 dependencies = ["pydantic >=2.10,<3", "requests >=2.32,<3"]
 
 [project.scripts]
-acr_db = "knacr.main:run"
+acr_db = "cafi.main:run"
 
 [build-system]
 build-backend = "poetry.core.masonry.api"
@@ -35,7 +35,7 @@ tag_format = "v$version"
 update_changelog_on_bump = true
 version_files = [
   "README.md:^\\[!\\[release:",
-  "src/knacr/constants/versions.py:^CURRENT_VER",
+  "src/cafi/constants/versions.py:^CURRENT_VER",
 ]
 version_provider = "pep621"
 version_type = "semver"
@@ -75,8 +75,8 @@ warn_unreachable = true
 warn_unused_ignores = true
 
 [tool.poetry]
-include = ["src/knacr/data/*", "src/knacr/py.typed"]
-packages = [{ include = "knacr", from = "src" }]
+include = ["src/cafi/data/*", "src/cafi/py.typed"]
+packages = [{ include = "cafi", from = "src" }]
 
 [tool.poetry.group.dev]
 optional = true
@@ -222,7 +222,7 @@ commands = [
 ]
 
 [tool.coverage.run]
-source = ["knacr"]
+source = ["cafi"]
 parallel = true
 
 [tool.coverage.report]
