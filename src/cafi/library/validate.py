@@ -290,6 +290,20 @@ def validate_regex_db(
 
 
 def validate_catalogue_db(to_eval: dict[str, Any], acr_db: ACR_DB_T, /) -> CCNO_DB_T:
+    """
+    Validates and creates a catalogue database from input data.
+
+    Args:
+        to_eval (dict[str, Any]): The input dictionary containing raw catalogue data.
+        acr_db (ACR_DB_T): Acronym database used for validation purposes.
+
+    Returns:
+        CCNO_DB_T: The validated catalogue database.
+
+    Raises:
+        Exception: If the validation process fails, an exception is raised with
+            a message indicating incorrect formatting.
+    """
     msg = "Catalogue data is incorrectly formatted!"
     _validate_ccno_db_struct(msg, to_eval)
     catalogue = create_ccno_db(to_eval)
