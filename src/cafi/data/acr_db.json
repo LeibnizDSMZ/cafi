@@ -118,6 +118,87 @@
       "full": "^\\d{4}-\\d{5}$"
     }
   },
+  "104": {
+    "acr": "VURV:A",
+    "active": true,
+    "code": "CARC:VURV:A",
+    "country": "CZ",
+    "homepage": "https://www.carc.cz/culturecollection/",
+    "name": "Collection of biotrophic fungi",
+    "regex_ccno": "^VURV-A\\s*(Sr|B|G)?\\d+\\s*(A|B)?$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^(Sr|B|G)?\\d+\\s*(A|B)?$",
+      "pre": "(Sr|B|G)",
+      "suf": "(A|B)"
+    },
+    "ror": "0436mv865"
+  },
+  "105": {
+    "acr": "VURV:B",
+    "active": true,
+    "code": "CARC:VURV:B",
+    "country": "CZ",
+    "homepage": "https://www.carc.cz/culturecollection/",
+    "name": "Collection of phytopathogenic and agriculturally beneficial bacteria",
+    "regex_ccno": "^VURV-B\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "0436mv865"
+  },
+  "106": {
+    "acr": "VURV:V",
+    "active": true,
+    "code": "CARC:VURV:V",
+    "country": "CZ",
+    "homepage": "https://www.carc.cz/culturecollection/",
+    "name": "Collection of plant pathogenic viruses",
+    "regex_ccno": "^VURV-V\\s*\\d+.?\\d*$",
+    "regex_id": {
+      "full": "^\\d+.?\\d*$"
+    },
+    "ror": "0436mv865"
+  },
+  "107": {
+    "acr": "VURV:M",
+    "active": true,
+    "code": "CARC:VURV:M",
+    "country": "CZ",
+    "homepage": "https://www.carc.cz/culturecollection/",
+    "name": "Collection of edible and medicinal macromycetes",
+    "regex_ccno": "^VURV-M\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "0436mv865"
+  },
+  "108": {
+    "acr": "VURV:R",
+    "active": true,
+    "code": "CARC:VURV:R",
+    "country": "CZ",
+    "homepage": "https://www.carc.cz/culturecollection/",
+    "name": "Collection of Soil Bacteria",
+    "regex_ccno": "^VURV-R\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "0436mv865"
+  },
+  "109": {
+    "acr": "VURV:F",
+    "active": true,
+    "code": "CARC:VURV:F",
+    "country": "CZ",
+    "homepage": "https://www.carc.cz/culturecollection/",
+    "name": "Collection of agriculturally important fungi",
+    "regex_ccno": "^VURV-F\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "0436mv865"
+  },
   "11": {
     "acr": "ULC",
     "acr_synonym": [
@@ -133,6 +214,19 @@
     "homepage": "https://bccm.belspo.be/about-ULC",
     "name": "Belgian Coordinated Collections of Microorganisms: ULC - Cyanobacteria Collection",
     "regex_ccno": "^ULC\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
+  "110": {
+    "acr": "ACA:DC",
+    "active": true,
+    "code": "ACA:DC",
+    "country": "GR",
+    "gbif": "47d75d87-8de9-4b3e-948d-4c5960cb7a33",
+    "homepage": "http://www.aca-dc.gr/",
+    "name": "Greek Coordinated Collections of Microorganisms",
+    "regex_ccno": "^ACA-DC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
     }
@@ -1732,86 +1826,5 @@
       "full": "^\\d+$"
     },
     "ror": "01aff2v68"
-  },
-  "104": {
-    "acr": "VURV:A",
-    "active": true,
-    "code": "CARC:VURV:A",
-    "country": "CZ",
-    "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of biotrophic fungi",
-    "regex_ccno": "^VURV-A\\s*(Sr|B|G)?\\d+\\s*(A|B)?$",
-    "regex_id": {
-      "core": "\\d+",
-      "full": "^(Sr|B|G)?\\d+\\s*(A|B)?$",
-      "pre": "(Sr|B|G)",
-      "suf": "(A|B)"
-    },
-    "ror": "0436mv865"
-  },
-  "105": {
-    "acr": "VURV:B",
-    "active": true,
-    "code": "CARC:VURV:B",
-    "country": "CZ",
-    "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of phytopathogenic and agriculturally beneficial bacteria",
-    "regex_ccno": "^VURV-B\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    },
-    "ror": "0436mv865"
-  },
-  "106": {
-    "acr": "VURV:V",
-    "active": true,
-    "code": "CARC:VURV:V",
-    "country": "CZ",
-    "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of plant pathogenic viruses",
-    "regex_ccno": "^VURV-V\\s*\\d+.?\\d*$",
-    "regex_id": {
-      "full": "^\\d+.?\\d*$"
-    },
-    "ror": "0436mv865"
-  },
-  "107": {
-    "acr": "VURV:M",
-    "active": true,
-    "code": "CARC:VURV:M",
-    "country": "CZ",
-    "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of edible and medicinal macromycetes",
-    "regex_ccno": "^VURV-M\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    },
-    "ror": "0436mv865"
-  },
-  "108": {
-    "acr": "VURV:R",
-    "active": true,
-    "code": "CARC:VURV:R",
-    "country": "CZ",
-    "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of Soil Bacteria",
-    "regex_ccno": "^VURV-R\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    },
-    "ror": "0436mv865"
-  },
-  "109": {
-    "acr": "VURV:F",
-    "active": true,
-    "code": "CARC:VURV:F",
-    "country": "CZ",
-    "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of agriculturally important fungi",
-    "regex_ccno": "^VURV-F\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    },
-    "ror": "0436mv865"
   }
 }
