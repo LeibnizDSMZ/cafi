@@ -374,19 +374,25 @@
     "CPCC 662"
   ],
   "104": [
-    "VURV-A 9116", "VURV-A Sr11", VURV-A 64 A, VURV-A G425, "VURV-A G425B", "VURV-A 9679A"
+    "VURV-A 9116",
+    "VURV-A Sr11",
+    "VURV-A 64 A",
+    "VURV-A G425",
+    "VURV-A G425B",
+    "VURV-A 9679A"
   ],
   "105": [
-     "VURV-B 188"
+    "VURV-B 188"
   ],
   "106": [
-     "VURV-V 47", "VURV-V 07.1"
+    "VURV-V 47",
+    "VURV-V 07.1"
   ],
   "107": [
     "VURV-M 066"
   ],
   "108": [
-    "VURV-R 760""
+    "VURV-R 760"
   ],
   "109": [
     "VURV-F 155"
