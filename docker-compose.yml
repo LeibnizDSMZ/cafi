@@ -7,4 +7,4 @@ services:
         - USERNAME=devu
         - USER_UID=1000
         - USER_GID=1000
-        - WORK_DIR=/workspacee
+        - WORK_DIR=/workspace
