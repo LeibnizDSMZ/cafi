@@ -34,6 +34,7 @@ This project serves as a registry for acronyms used by culture collections.
 
 - Isabel Schober
 - Julius Witte
+- Helko Lüken
 
 ---
 
