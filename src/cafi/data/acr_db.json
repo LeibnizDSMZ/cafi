@@ -231,6 +231,66 @@
       "full": "^\\d+$"
     }
   },
+  "111": {
+    "acr": "TUCC",
+    "acr_synonym": [
+      "TO:TUCC",
+      "UNITO:TUCC"
+    ],
+    "active": true,
+    "code": "UNITO:TUCC",
+    "country": "IT",
+    "homepage": "http://www.mut.unito.it/it",
+    "name": "Turin University Culture Collection",
+    "regex_ccno": "^(TUCC|MUT)\\s*\\d{8}$",
+    "regex_id": {
+      "full": "^\\d{8}$"
+    },
+    "ror": "048tbm396"
+  },
+  "112": {
+    "acr": "CIM",
+    "active": true,
+    "code": "IAFB",
+    "country": "PL",
+    "gbif": "81fb06c0-af9d-11db-ad75-b8a03c50a862",
+    "homepage": "https://cim.ibprs.pl/",
+    "name": "Collection of Industrial Microorganisms",
+    "regex_ccno": "^(CIM)?\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
+  "113": {
+    "acr": "KPD",
+    "active": true,
+    "code": "KPD",
+    "country": "PL",
+    "homepage": "https://biology.ug.edu.pl",
+    "name": "Collection of Plasmids and Microorganisms",
+    "regex_ccno": "^KPD\\s*\\d+-BA$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^\\d+-BA$",
+      "suf": "BA"
+    },
+    "ror": "011dv8m48"
+  },
+  "114": {
+    "acr": "PCM",
+    "active": true,
+    "code": "PASIFIC:PCM",
+    "country": "PL",
+    "homepage": "https://www.pcm.org.pl/home",
+    "name": "Polish Collection of Microorganism",
+    "regex_ccno": "^PCM\\s*\\d+-?(FY)?$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^\\d+-?(FY)?$",
+      "suf": "(FY)"
+    },
+    "ror": "01dr6c206"
+  },
   "12": {
     "acr": "NBRC",
     "active": true,
