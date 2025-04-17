@@ -120,22 +120,28 @@
   },
   "104": {
     "acr": "VURV:A",
+    "acr_synonym": [
+      "CARC:VURV:A"
+    ],
     "active": true,
     "code": "CARC:VURV:A",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
     "name": "Collection of biotrophic fungi",
-    "regex_ccno": "^VURV-A\\s*(Sr|B|G)?\\d+\\s*(A|B)?$",
+    "regex_ccno": "^VURV-A\\s*(Sr|B|G)?\\d+\\s*[AB]?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^(Sr|B|G)?\\d+\\s*(A|B)?$",
+      "full": "^(Sr|B|G)?\\d+\\s*[AB]?$",
       "pre": "(Sr|B|G)",
-      "suf": "(A|B)"
+      "suf": "[AB]"
     },
     "ror": "0436mv865"
   },
   "105": {
     "acr": "VURV:B",
+    "acr_synonym": [
+      "CARC:VURV:B"
+    ],
     "active": true,
     "code": "CARC:VURV:B",
     "country": "CZ",
@@ -149,19 +155,25 @@
   },
   "106": {
     "acr": "VURV:V",
+    "acr_synonym": [
+      "CARC:VURV:V"
+    ],
     "active": true,
     "code": "CARC:VURV:V",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
     "name": "Collection of plant pathogenic viruses",
-    "regex_ccno": "^VURV-V\\s*\\d+.?\\d*$",
+    "regex_ccno": "^VURV-V\\s*\\d+\\.?\\d*$",
     "regex_id": {
-      "full": "^\\d+.?\\d*$"
+      "full": "^\\d+\\.?\\d*$"
     },
     "ror": "0436mv865"
   },
   "107": {
     "acr": "VURV:M",
+    "acr_synonym": [
+      "CARC:VURV:M"
+    ],
     "active": true,
     "code": "CARC:VURV:M",
     "country": "CZ",
@@ -175,6 +187,9 @@
   },
   "108": {
     "acr": "VURV:R",
+    "acr_synonym": [
+      "CARC:VURV:R"
+    ],
     "active": true,
     "code": "CARC:VURV:R",
     "country": "CZ",
@@ -188,6 +203,9 @@
   },
   "109": {
     "acr": "VURV:F",
+    "acr_synonym": [
+      "CARC:VURV:F"
+    ],
     "active": true,
     "code": "CARC:VURV:F",
     "country": "CZ",
@@ -234,39 +252,63 @@
   "111": {
     "acr": "TUCC",
     "acr_synonym": [
-      "TO:TUCC",
       "UNITO:TUCC"
     ],
     "active": true,
+    "catalogue": [
+      "https://www.tucc-database.unito.it/view_collection_entry/{acr}{core0:8}"
+    ],
     "code": "UNITO:TUCC",
     "country": "IT",
-    "homepage": "http://www.mut.unito.it/it",
+    "homepage": "https://www.tucc.unito.it/en",
     "name": "Turin University Culture Collection",
-    "regex_ccno": "^(TUCC|MUT)\\s*\\d{8}$",
+    "regex_ccno": "^TUCC\\s*\\d+$",
     "regex_id": {
-      "full": "^\\d{8}$"
+      "full": "^\\d+$"
     },
     "ror": "048tbm396"
   },
   "112": {
+    "acr": "MUT",
+    "acr_synonym": [
+      "UNITO:MUT"
+    ],
+    "active": true,
+    "catalogue": [
+      "https://www.tucc-database.unito.it/view_collection_entry/{acr}{core0:8}"
+    ],
+    "code": "UNITO:TUCC",
+    "country": "IT",
+    "homepage": "https://www.tucc.unito.it/en",
+    "name": "Turin University Culture Collection - The Mycotheca Universitatis Taurinensis",
+    "regex_ccno": "^MUT\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "048tbm396"
+  },
+  "113": {
     "acr": "CIM",
     "active": true,
+    "catalogue": [
+      "https://cim.ibprs.pl/{id}.html"
+    ],
     "code": "IAFB",
     "country": "PL",
-    "gbif": "81fb06c0-af9d-11db-ad75-b8a03c50a862",
+    "gbif": "a64756cd-e161-47bf-8329-72eb35a071b4",
     "homepage": "https://cim.ibprs.pl/",
     "name": "Collection of Industrial Microorganisms",
-    "regex_ccno": "^(CIM)?\\s*\\d+$",
+    "regex_ccno": "^CIM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
     }
   },
-  "113": {
+  "114": {
     "acr": "KPD",
     "active": true,
     "code": "KPD",
     "country": "PL",
-    "homepage": "https://biology.ug.edu.pl",
+    "homepage": "https://biology.ug.edu.pl/EN/kpd",
     "name": "Collection of Plasmids and Microorganisms",
     "regex_ccno": "^KPD\\s*\\d+-BA$",
     "regex_id": {
@@ -276,9 +318,15 @@
     },
     "ror": "011dv8m48"
   },
-  "114": {
+  "115": {
     "acr": "PCM",
+    "acr_synonym": [
+      "PASIFIC:PCM"
+    ],
     "active": true,
+    "catalogue": [
+      "https://www.pcm.org.pl/search/PCM?url=/search/{acr} {id}"
+    ],
     "code": "PASIFIC:PCM",
     "country": "PL",
     "homepage": "https://www.pcm.org.pl/home",
@@ -287,7 +335,7 @@
     "regex_id": {
       "core": "\\d+",
       "full": "^\\d+-?(FY)?$",
-      "suf": "(FY)"
+      "suf": "FY"
     },
     "ror": "01dr6c206"
   },
