@@ -400,10 +400,10 @@
     "gbif": "0bb73ddf-8a48-4a4c-98f1-095b670b9319",
     "homepage": "http://www.iegmcol.ru/",
     "name": "Regional Specialised Collection of Alkanotrophic Microorganisms",
-    "regex_ccno": "^IEGM\\s*\\d+\\s*T?$",
+    "regex_ccno": "^IEGM\\s*\\d+T?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^\\d+\\s*T?$",
+      "full": "^\\d+T?$",
       "suf": "T"
     },
     "ror": "01aff2v68"
@@ -435,10 +435,10 @@
     "gbif": "cbbca472-8816-45bc-bb15-1116e1c607f7",
     "homepage": "https://cellreg.org/http-en-cellreg-org/",
     "name": "Departamento de Biosistemas Moleculares",
-    "regex_ccno": "^IPPAS\\s*([ABCDEHS]-)?\\d+$",
+    "regex_ccno": "^IPPAS\\s*[ABCDEHS]-\\d+$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^([ABCDEHS]-)?\\d+$",
+      "full": "^[ABCDEHS]-\\d+$",
       "pre": "[ABCDEHS]"
     }
   },
