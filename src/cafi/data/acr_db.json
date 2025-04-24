@@ -442,6 +442,19 @@
       "pre": "[ABCDEHS]"
     }
   },
+  "121": {
+    "acr": "CCY",
+    "active": true,
+    "code": "CCY",
+    "country": "SK",
+    "homepage": "https://www.ccy.sk/index.php/en/",
+    "name": "The Culture Collection of Yeasts",
+    "regex_ccno": "^CCY\\s*\\d+-\\d+-\\d+$",
+    "regex_id": {
+      "full": "^\\d+-\\d+-\\d+$"
+    },
+    "ror": "02te3c603"
+  },
   "13": {
     "acr": "IMI",
     "acr_synonym": [
