@@ -373,6 +373,22 @@
     },
     "ror": "04276xd64"
   },
+  "118": {
+    "acr": "CCP",
+    "active": true,
+    "catalogue": [
+      "https://ccp.ff.up.pt/ccp-{id}"
+    ],
+    "code": "FFUP:CCP",
+    "country": "PT",
+    "homepage": "https://ccp.ff.up.pt",
+    "name": "Culture Collection of Porto",
+    "regex_ccno": "^CCP\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "043pwc612"
+  },
   "12": {
     "acr": "NBRC",
     "active": true,
