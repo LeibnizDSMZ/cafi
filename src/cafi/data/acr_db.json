@@ -357,6 +357,22 @@
     },
     "ror": "01aff2v68"
   },
+  "117": {
+    "acr": "BACA",
+    "active": true,
+    "catalogue": [
+      "https://baca.uac.pt/catalog/baca{core0:4}"
+    ],
+    "code": "UAC:BACA",
+    "country": "PT",
+    "homepage": "https:/baca.uac.pt",
+    "name": "Bank of Algae and Cyanobacteria of the Azores",
+    "regex_ccno": "^BACA\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "04276xd64"
+  },
   "12": {
     "acr": "NBRC",
     "active": true,
