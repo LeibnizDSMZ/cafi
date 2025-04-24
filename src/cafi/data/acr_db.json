@@ -339,6 +339,24 @@
     },
     "ror": "01dr6c206"
   },
+  "116": {
+    "acr": "LEGE",
+    "active": true,
+    "catalogue": [
+      "https://legeculturecollection.ciimar.up.pt/strains-front?search={acr}+{id}"
+    ],
+    "code": "LEGE:CC",
+    "country": "PT",
+    "homepage": "https://lege.ciimar.up.pt",
+    "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
+    "regex_ccno": "^(LEGE\\s*|XX)\\d+M?$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^\\d+M?$",
+      "suf": "M"
+    },
+    "ror": "01aff2v68"
+  },
   "12": {
     "acr": "NBRC",
     "active": true,
