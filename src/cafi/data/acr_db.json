@@ -424,6 +424,24 @@
       "full": "^\\d+$"
     }
   },
+  "120": {
+    "acr": "IPPAS",
+    "active": true,
+    "catalogue": [
+      "https://cellreg.org/Catalog_2020/Catalog%20NEW/{acr}%20{id}.html"
+    ],
+    "code": "IPPAS",
+    "country": "RU",
+    "gbif": "cbbca472-8816-45bc-bb15-1116e1c607f7",
+    "homepage": "https://cellreg.org/http-en-cellreg-org/",
+    "name": "Departamento de Biosistemas Moleculares",
+    "regex_ccno": "^IPPAS\\s*[ABCDEHS]-\\d+$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^[ABCDEHS]-\\d+$",
+      "pre": "[ABCDEHS]"
+    }
+  },
   "13": {
     "acr": "IMI",
     "acr_synonym": [
