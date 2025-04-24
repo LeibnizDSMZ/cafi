@@ -389,6 +389,25 @@
     },
     "ror": "043pwc612"
   },
+  "119": {
+    "acr": "IEGM",
+    "active": true,
+    "catalogue": [
+      "http://www.iegmcol.ru/strains/.+{core}t?"
+    ],
+    "code": "IEGM",
+    "country": "RU",
+    "gbif": "0bb73ddf-8a48-4a4c-98f1-095b670b9319",
+    "homepage": "http://www.iegmcol.ru/",
+    "name": "Regional Specialised Collection of Alkanotrophic Microorganisms",
+    "regex_ccno": "^IEGM\\s*\\d+\\s*T?$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^\\d+\\s*T?$",
+      "suf": "T"
+    },
+    "ror": "01aff2v68"
+  },
   "12": {
     "acr": "NBRC",
     "active": true,
