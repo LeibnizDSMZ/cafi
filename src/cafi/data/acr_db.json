@@ -485,6 +485,19 @@
       "full": "^\\d+$"
     }
   },
+  "124": {
+    "acr": "CCOS",
+    "active": true,
+    "code": "CCOS",
+    "country": "CH",
+    "gbif": "91cf7262-cce9-43ab-beae-310dd45b115d",
+    "homepage": "https://www.ccos.ch/",
+    "name": "The Culture Collection of Switzerland",
+    "regex_ccno": "^CCOS\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "13": {
     "acr": "IMI",
     "acr_synonym": [
