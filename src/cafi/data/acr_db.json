@@ -435,10 +435,10 @@
     "gbif": "cbbca472-8816-45bc-bb15-1116e1c607f7",
     "homepage": "https://cellreg.org/http-en-cellreg-org/",
     "name": "Departamento de Biosistemas Moleculares",
-    "regex_ccno": "^IPPAS\\s*[ABCDEHS]-\\d+$",
+    "regex_ccno": "^IPPAS\\s*([ABCDEHS]-)?\\d+$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^[ABCDEHS]-\\d+$",
+      "full": "^([ABCDEHS]-)?\\d+$",
       "pre": "[ABCDEHS]"
     }
   },
@@ -454,6 +454,36 @@
       "full": "^\\d+-\\d+-\\d+$"
     },
     "ror": "02te3c603"
+  },
+  "122": {
+    "acr": "BEA",
+    "active": true,
+    "catalogue": [
+      "https://marinebiotechnology.org/en/store/strain-cultures/.+/{id}.html"
+    ],
+    "code": "BEA",
+    "country": "ES",
+    "homepage": "https://marinebiotechnology.org/en/beaen/about-us.html",
+    "name": "Spanish Bank of Algae",
+    "regex_ccno": "^BEA\\s*\\d+B?$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "^\\d+B?$",
+      "suf": "B"
+    },
+    "ror": "01aff2v68"
+  },
+  "123": {
+    "acr": "BMCC",
+    "active": true,
+    "code": "BMCC",
+    "country": "ES",
+    "homepage": "https://www.ehu.eus/en/web/bmcc/",
+    "name": "Basque Microalgae Culture Collection",
+    "regex_ccno": "^BMCC\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
   },
   "13": {
     "acr": "IMI",
