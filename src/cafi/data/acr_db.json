@@ -349,13 +349,12 @@
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
     "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
-    "regex_ccno": "^(LEGE\\s*|XX)\\d+M?$",
+    "regex_ccno": "^LEGE\\s*\\d+M?$",
     "regex_id": {
       "core": "\\d+",
       "full": "^\\d+M?$",
       "suf": "M"
-    },
-    "ror": "01aff2v68"
+    }
   },
   "117": {
     "acr": "BACA",
@@ -392,21 +391,15 @@
   "119": {
     "acr": "IEGM",
     "active": true,
-    "catalogue": [
-      "http://www.iegmcol.ru/strains/.+{core}t?"
-    ],
     "code": "IEGM",
     "country": "RU",
     "gbif": "0bb73ddf-8a48-4a4c-98f1-095b670b9319",
     "homepage": "http://www.iegmcol.ru/",
     "name": "Regional Specialised Collection of Alkanotrophic Microorganisms",
-    "regex_ccno": "^IEGM\\s*\\d+T?$",
+    "regex_ccno": "^IEGM\\s*\\d+$",
     "regex_id": {
-      "core": "\\d+",
-      "full": "^\\d+T?$",
-      "suf": "T"
-    },
-    "ror": "01aff2v68"
+      "full": "^\\d+$"
+    }
   },
   "12": {
     "acr": "NBRC",
@@ -428,13 +421,13 @@
     "acr": "IPPAS",
     "active": true,
     "catalogue": [
-      "https://cellreg.org/Catalog_2020/Catalog%20NEW/{acr}%20{id}.html"
+      "https://cellreg.org/Catalog_2020/Catalog NEW/{acr} {id}.html"
     ],
     "code": "IPPAS",
     "country": "RU",
     "gbif": "cbbca472-8816-45bc-bb15-1116e1c607f7",
     "homepage": "https://cellreg.org/http-en-cellreg-org/",
-    "name": "Departamento de Biosistemas Moleculares",
+    "name": "Culture Collection of Microalgae IPPAS",
     "regex_ccno": "^IPPAS\\s*[ABCDEHS]-\\d+$",
     "regex_id": {
       "core": "\\d+",
@@ -445,6 +438,9 @@
   "121": {
     "acr": "CCY",
     "active": true,
+    "catalogue": [
+      "https://ccy.sk/ppa_ccy_db/ccy-detail-en.php?q={id}"
+    ],
     "code": "CCY",
     "country": "SK",
     "homepage": "https://www.ccy.sk/index.php/en/",
@@ -458,9 +454,6 @@
   "122": {
     "acr": "BEA",
     "active": true,
-    "catalogue": [
-      "https://marinebiotechnology.org/en/store/strain-cultures/.+/{id}.html"
-    ],
     "code": "BEA",
     "country": "ES",
     "homepage": "https://marinebiotechnology.org/en/beaen/about-us.html",
@@ -470,8 +463,7 @@
       "core": "\\d+",
       "full": "^\\d+B?$",
       "suf": "B"
-    },
-    "ror": "01aff2v68"
+    }
   },
   "123": {
     "acr": "BMCC",
