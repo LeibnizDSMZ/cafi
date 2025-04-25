@@ -18,6 +18,7 @@ from cafi.errors.custom_exceptions import ValJsonEx
 
 
 _ACR: Final[re.Pattern[str]] = re.compile(r"^[A-Z:]+$")
+_NON_WORD: Final[re.Pattern[str]] = re.compile(r"[^A-Za-z]+")
 _ACR_SPL: Final[re.Pattern[str]] = re.compile(r":")
 _CORE_ID: Final[re.Pattern[str]] = re.compile(r"^\d+(\D\d+)*$")
 _CL_REGEX: Final[re.Pattern[str]] = re.compile(r"[()\][]")
@@ -112,9 +113,14 @@ def _check_acr(acr: str, /) -> None:
 
 
 def _check_acr_in_reg(acr: str, ccno_reg: str, /) -> None:
-    for acr_part in _ACR_SPL.split(acr):
-        if acr_part not in ccno_reg:
-            raise ValJsonEx(f"{acr} mismatches the acronym in regex: {ccno_reg}")
+    first, *_ = _ACR_SPL.split(acr)
+    first_reg = f"\\^{first}"
+    if re.match(first_reg, ccno_reg, re.I) is None:
+        raise ValJsonEx(f"regex {ccno_reg} does not start with {first_reg} [{acr}]")
+    compact_reg = _NON_WORD.sub("", ccno_reg)
+    compact_acr = _ACR_SPL.sub("", acr).strip()
+    if re.match(compact_acr, compact_reg, re.I) is None:
+        raise ValJsonEx(f"{compact_acr} mismatches the acronym in regex: {compact_reg}")
 
 
 def _check_regex_start_end(reg_full: list[str], reg_part: list[str], /) -> None:
