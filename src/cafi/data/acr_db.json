@@ -349,12 +349,14 @@
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
     "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
-    "regex_ccno": "^LEGE\\s*\\d+M?$",
+    "regex_ccno": "^LEGE\\s*(X(-|X))?\\d+M?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^\\d+M?$",
+      "full": "^(X(-|X))?\\d+M?$",
+      "pre": "X(-|X)",
       "suf": "M"
-    }
+    },
+    "ror": "05p7z7s64"
   },
   "117": {
     "acr": "BACA",
