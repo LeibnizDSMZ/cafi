@@ -10,7 +10,7 @@
     ],
     "code": "DSMZ",
     "country": "DE",
-    "gbif": "883f3d24-35e9-462d-b7a3-13c2b9b7260e",
+    "gbif": "I:883f3d24-35e9-462d-b7a3-13c2b9b7260e",
     "homepage": "https://www.dsmz.de/",
     "name": "DSMZ-German Collection of Microorganisms and Cell Cultures",
     "regex_ccno": "^DSM\\s*\\d+$",
@@ -33,7 +33,7 @@
     "active": false,
     "code": "BCCM:ITM",
     "country": "BE",
-    "gbif": "28b36aa2-3932-4ae9-81fb-c1e9ad12b459",
+    "gbif": "C:68676ac7-431d-4a67-a84b-97969fe455d8",
     "name": "Belgian Coordinated Collections of Microorganisms: ITM - Mycobacteria Collection",
     "regex_ccno": "^ITM[\\s-]?\\d+$",
     "regex_id": {
@@ -75,9 +75,9 @@
     ],
     "code": "UIO:NORCCA",
     "country": "NO",
-    "gbif": "a9ab29d6-f380-4193-967f-15a64abc09e7",
+    "gbif": "I:a9ab29d6-f380-4193-967f-15a64abc09e7",
     "homepage": "https://norcca.scrol.net/",
-    "name": "University of Waterloo: The Norwegian Culture Collection of Algae",
+    "name": "University of Oslo: The Norwegian Culture Collection of Algae",
     "regex_ccno": "^NORCCA\\s*K-\\d+$",
     "regex_id": {
       "core": "\\d+",
@@ -94,7 +94,7 @@
     ],
     "code": "HER",
     "country": "CA",
-    "gbif": "1010d88d-792b-4b6b-998c-0eec5dbf0d6b",
+    "gbif": "I:1010d88d-792b-4b6b-998c-0eec5dbf0d6b",
     "homepage": "https://www.phage.ulaval.ca/en/home/",
     "name": "Felix d'Herelle Reference Center for Bacterial Viruses",
     "regex_ccno": "^HER\\s*\\d+$",
@@ -105,12 +105,9 @@
   "103": {
     "acr": "CT",
     "active": true,
-    "catalogue": [
-      "https://bccm.belspo.be/page/itm-display/fields/name/{acr}{id}"
-    ],
     "code": "BCCM:ITM",
     "country": "BE",
-    "gbif": "28b36aa2-3932-4ae9-81fb-c1e9ad12b459",
+    "gbif": "C:68676ac7-431d-4a67-a84b-97969fe455d8",
     "homepage": "https://bccm.belspo.be/about-ITM",
     "name": "Belgian Coordinated Collections of Microorganisms: ITM - Mycobacteria Collection",
     "regex_ccno": "^CT\\s*\\d{4}-\\d{5}$",
@@ -128,12 +125,12 @@
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
     "name": "Collection of biotrophic fungi",
-    "regex_ccno": "^VURV-A\\s*(Sr|B|G)?\\d+\\s*[AB]?$",
+    "regex_ccno": "^VURV-A\\s*(Sr|B|C|G|T)?\\d+\\s*(A|B|C|D|E|LG)?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^(Sr|B|G)?\\d+\\s*[AB]?$",
-      "pre": "(Sr|B|G)",
-      "suf": "[AB]"
+      "full": "^(Sr|B|C|G|T)?\\d+\\s*(A|B|C|D|E|LG)?$",
+      "pre": "(Sr|B|C|G|T)",
+      "suf": "(A|B|C|D|E|LG)"
     },
     "ror": "0436mv865"
   },
@@ -224,11 +221,11 @@
     ],
     "active": true,
     "catalogue": [
-      "https://bccm.belspo.be/page/ulc-display/fields/name/{acr} {id}"
+      "https://bccm.belspo.be/page/ulc-display/{id}"
     ],
     "code": "BCCM:ULC",
     "country": "BE",
-    "gbif": "28b36aa2-3932-4ae9-81fb-c1e9ad12b459",
+    "gbif": "C:46d10430-d3b6-4bd7-9c75-00740963ff34",
     "homepage": "https://bccm.belspo.be/about-ULC",
     "name": "Belgian Coordinated Collections of Microorganisms: ULC - Cyanobacteria Collection",
     "regex_ccno": "^ULC\\s*\\d+$",
@@ -241,7 +238,7 @@
     "active": true,
     "code": "ACA:DC",
     "country": "GR",
-    "gbif": "47d75d87-8de9-4b3e-948d-4c5960cb7a33",
+    "gbif": "I:47d75d87-8de9-4b3e-948d-4c5960cb7a33",
     "homepage": "http://www.aca-dc.gr/",
     "name": "Greek Coordinated Collections of Microorganisms",
     "regex_ccno": "^ACA-DC\\s*\\d+$",
@@ -277,8 +274,9 @@
     "catalogue": [
       "https://www.tucc-database.unito.it/view_collection_entry/{acr}{core0:8}"
     ],
-    "code": "UNITO:TUCC",
+    "code": "UNITO:MUT",
     "country": "IT",
+    "gbif": "fb36cacb-2b9f-4e53-9f4e-f1644f6953a0",
     "homepage": "https://www.tucc.unito.it/en",
     "name": "Turin University Culture Collection - The Mycotheca Universitatis Taurinensis",
     "regex_ccno": "^MUT\\s*\\d+$",
@@ -293,7 +291,7 @@
     "catalogue": [
       "https://cim.ibprs.pl/{id}.html"
     ],
-    "code": "IAFB",
+    "code": "IAFB:CIM",
     "country": "PL",
     "gbif": "a64756cd-e161-47bf-8329-72eb35a071b4",
     "homepage": "https://cim.ibprs.pl/",
@@ -325,7 +323,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://www.pcm.org.pl/search/PCM?url=/search/{acr} {id}"
+      "https://www.pcm.org.pl/search/PCM?url=/search/{acr} {core}"
     ],
     "code": "PASIFIC:PCM",
     "country": "PL",
@@ -345,7 +343,7 @@
     "catalogue": [
       "https://legeculturecollection.ciimar.up.pt/strains-front?search={acr}+{id}"
     ],
-    "code": "LEGE:CC",
+    "code": "CIIMAR:LEGE:CC",
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
     "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
@@ -395,7 +393,7 @@
     "active": true,
     "code": "IEGM",
     "country": "RU",
-    "gbif": "0bb73ddf-8a48-4a4c-98f1-095b670b9319",
+    "gbif": "I:0bb73ddf-8a48-4a4c-98f1-095b670b9319",
     "homepage": "http://www.iegmcol.ru/",
     "name": "Regional Specialised Collection of Alkanotrophic Microorganisms",
     "regex_ccno": "^IEGM\\s*\\d+$",
@@ -409,9 +407,9 @@
     "catalogue": [
       "https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&CAT={core0:8}"
     ],
-    "code": "NBRC",
+    "code": "NOTE:NBRC",
     "country": "JP",
-    "gbif": "abab42d0-0a95-4166-a0fc-6fe5cd9b66ff",
+    "gbif": "C:2f0ef18d-ca32-4ce2-8d4c-24f6f8c21da8",
     "homepage": "https://www.nite.go.jp/en/nbrc/",
     "name": "Biological Resource Center, NITE",
     "regex_ccno": "^NBRC\\s*\\d+$",
@@ -427,7 +425,7 @@
     ],
     "code": "IPPAS",
     "country": "RU",
-    "gbif": "cbbca472-8816-45bc-bb15-1116e1c607f7",
+    "gbif": "I:cbbca472-8816-45bc-bb15-1116e1c607f7",
     "homepage": "https://cellreg.org/http-en-cellreg-org/",
     "name": "Culture Collection of Microalgae IPPAS",
     "regex_ccno": "^IPPAS\\s*[ABCDEHS]-\\d+$",
@@ -443,7 +441,7 @@
     "catalogue": [
       "https://ccy.sk/ppa_ccy_db/ccy-detail-en.php?q={id}"
     ],
-    "code": "CCY",
+    "code": "SAS:CCY",
     "country": "SK",
     "homepage": "https://www.ccy.sk/index.php/en/",
     "name": "The Culture Collection of Yeasts",
@@ -456,7 +454,7 @@
   "122": {
     "acr": "BEA",
     "active": true,
-    "code": "BEA",
+    "code": "ULPGC:BEA",
     "country": "ES",
     "homepage": "https://marinebiotechnology.org/en/beaen/about-us.html",
     "name": "Spanish Bank of Algae",
@@ -465,7 +463,8 @@
       "core": "\\d+",
       "full": "^\\d+B?$",
       "suf": "B"
-    }
+    },
+    "ror": "01teme464"
   },
   "123": {
     "acr": "BMCC",
@@ -477,14 +476,15 @@
     "regex_ccno": "^BMCC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
-    }
+    },
+    "ror": "000xsnr85"
   },
   "124": {
     "acr": "CCOS",
     "active": true,
     "code": "CCOS",
     "country": "CH",
-    "gbif": "91cf7262-cce9-43ab-beae-310dd45b115d",
+    "gbif": "I:91cf7262-cce9-43ab-beae-310dd45b115d",
     "homepage": "https://www.ccos.ch/",
     "name": "The Culture Collection of Switzerland",
     "regex_ccno": "^CCOS\\s*\\d+$",
@@ -500,7 +500,7 @@
     "active": true,
     "code": "CABI:IMI",
     "country": "GB",
-    "gbif": "66fa41cc-3c2d-42b1-9840-e4f097e38393",
+    "gbif": "I:66fa41cc-3c2d-42b1-9840-e4f097e38393",
     "homepage": "https://www.cabi.org/",
     "name": "CABI (Centre for Agriculture and Biosciences International): Genetic Resource Collection",
     "regex_ccno": "^IMI\\s*\\d+\\s*[ab*]?(i+)?$",
@@ -517,15 +517,16 @@
     "catalogue": [
       "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM={id}"
     ],
-    "code": "JCM",
+    "code": "RIKEN:JCM",
     "country": "JP",
-    "gbif": "fce1f744-ca76-46bb-9428-d92cfebe39d4",
+    "gbif": "I:fce1f744-ca76-46bb-9428-d92cfebe39d4",
     "homepage": "https://jcm.brc.riken.jp/en/",
     "name": "Japan Collection of Microorganisms",
     "regex_ccno": "^JCM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
-    }
+    },
+    "ror": "https://ror.org/00s05em53"
   },
   "15": {
     "acr": "IAM",
@@ -538,7 +539,7 @@
     "active": false,
     "code": "IAM",
     "country": "JP",
-    "gbif": "751a604a-4980-4aa4-8c68-a80db0f37027",
+    "gbif": "I:751a604a-4980-4aa4-8c68-a80db0f37027",
     "name": "IAM Culture Collection, Center for Cellular and Molecular Research",
     "regex_ccno": "^IAM\\s*\\d+$",
     "regex_id": {
@@ -556,7 +557,7 @@
     "active": false,
     "code": "IFO",
     "country": "JP",
-    "gbif": "70803321-b5fe-4922-a064-7d8e9eeb1aa9",
+    "gbif": "I:70803321-b5fe-4922-a064-7d8e9eeb1aa9",
     "name": "Institute for Fermentation",
     "regex_ccno": "^IFO\\s*\\d+$",
     "regex_id": {
@@ -572,7 +573,7 @@
     "active": true,
     "code": "USDA:ARS:NRRL",
     "country": "US",
-    "gbif": "e1666b1f-f017-4a8f-8d98-a675360bed6e",
+    "gbif": "C:7c9d0cb4-0cfa-4b6b-99e8-9defa67ed797",
     "homepage": "https://nrrl.ncaur.usda.gov/",
     "name": "USDA Agricultural Research Service (ARS): Culture Collection (NRRL)",
     "regex_ccno": "^NRRL\\s*((L|ISP|WC|HD|NRS|S|BD|B|YB|Y)-)?\\d+$",
@@ -594,7 +595,7 @@
     ],
     "code": "CRBIP:CIP",
     "country": "FR",
-    "gbif": "c77394b6-3c70-40d4-94cc-dfe05ec2cfda",
+    "gbif": "I:c77394b6-3c70-40d4-94cc-dfe05ec2cfda",
     "homepage": "https://www.pasteur.fr/en/public-health/biobanks-and-collections/collection-institut-pasteur-cip",
     "name": "Biological Resource Center of Institut Pasteur (CRBIP): Collection of Institut Pasteur",
     "regex_ccno": "^CIP\\s*A?\\s*\\d+(\\.\\d+)?$",

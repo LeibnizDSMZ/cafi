@@ -13,7 +13,7 @@ from cafi.container.acr_db import (
     ACR_DB_KEYS,
 )
 from cafi.container.fun.acr_db import check_uri_template, create_acr_db, create_ccno_db
-from cafi.container.fun.format import url_to_str, uuid_to_str
+from cafi.container.fun.format import url_to_str
 from cafi.errors.custom_exceptions import ValJsonEx
 
 
@@ -226,9 +226,7 @@ def _validate_acr_db_dc(acr_db: ACR_DB_T, /) -> None:
         check_uri_template(acr_con.catalogue)
         uni_gen.add(_check_unique_gen(uni_gen, acr_con))
         uni_gid.add(_check_unique_gid(uni_gid, acr_con, lambda db: db.ror, "ror"))
-        uni_gid.add(
-            _check_unique_gid(uni_gid, acr_con, lambda db: uuid_to_str(db.gbif), "gbif")
-        )
+        uni_gid.add(_check_unique_gid(uni_gid, acr_con, lambda db: db.gbif, "gbif"))
         _check_db_composition(acr_con, acr_db)
         _check_acr(acr_con.acr)
         _check_regex(acr_con.regex_ccno, acr_con.regex_id, acr_id)

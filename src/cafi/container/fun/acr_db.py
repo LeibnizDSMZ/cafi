@@ -110,7 +110,7 @@ def _check_uri_template(uri: str, /) -> None:
     for param in _VALID_URI.findall(uri):
         arg_parts = _ID_SUB.match(param)
         if arg_parts is None or arg_parts.group(1) not in _VALID_PAR:
-            raise ValJsonEx(f"invalid param name detected [{param}]")
+            raise ValJsonEx(f"invalid param name detected [{param} in {uri}]")
         if arg_parts.group(2) is not None:
             sub_parts[arg_parts.group(1)].append(int(arg_parts.group(2).strip(":")))
             if arg_parts.group(1) not in _VALID_PAR_SUB:
