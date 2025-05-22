@@ -62,7 +62,8 @@ class AcrDbEntry(BaseModel):
     regex_ccno: Annotated[str, Field(min_length=4), AfterValidator(_is_regex)]
     regex_id: AcrCoreReg
     ror: Annotated[str, Field(min_length=1)] = ""
-    gbif: _UuidStr | None = None
+    # gbif: _UuidStr | None = None
+    gbif: Annotated[str, Field(min_length=36, pattern=r"^([IC]:)?[a-zA-Z0-9-]+$")] = ""
     deprecated: bool = False
     homepage: _UrlStr | None = None
     catalogue: list[_UrlStr] = Field(default_factory=list)
