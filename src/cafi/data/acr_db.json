@@ -54,7 +54,7 @@
     "active": false,
     "code": "UCPH:SCCAP",
     "country": "DK",
-    "gbif": "d41fff82-155c-48d1-9324-2cf94a4aed6c",
+    "gbif": "I:d41fff82-155c-48d1-9324-2cf94a4aed6c",
     "name": "University of Copenhagen: Scandinavian Culture Collection of Algae & Protozoa",
     "regex_ccno": "^SCCAP\\s*K-\\d+$",
     "regex_id": {
@@ -124,7 +124,7 @@
     "code": "CARC:VURV:A",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of biotrophic fungi",
+    "name": "Czech Agrifood Research Center: Collection of biotrophic fungi",
     "regex_ccno": "^VURV-A\\s*(Sr|B|C|G|T)?\\d+\\s*(A|B|C|D|E|LG)?$",
     "regex_id": {
       "core": "\\d+",
@@ -143,7 +143,7 @@
     "code": "CARC:VURV:B",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of phytopathogenic and agriculturally beneficial bacteria",
+    "name": "Czech Agrifood Research Center: Collection of phytopathogenic and agriculturally beneficial bacteria",
     "regex_ccno": "^VURV-B\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -159,7 +159,7 @@
     "code": "CARC:VURV:V",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of plant pathogenic viruses",
+    "name": "Czech Agrifood Research Center: Collection of plant pathogenic viruses",
     "regex_ccno": "^VURV-V\\s*\\d+\\.?\\d*$",
     "regex_id": {
       "full": "^\\d+\\.?\\d*$"
@@ -175,7 +175,7 @@
     "code": "CARC:VURV:M",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of edible and medicinal macromycetes",
+    "name": "Czech Agrifood Research Center: Collection of edible and medicinal macromycetes",
     "regex_ccno": "^VURV-M\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -191,7 +191,7 @@
     "code": "CARC:VURV:R",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of Soil Bacteria",
+    "name": "Czech Agrifood Research Center: Collection of Soil Bacteria",
     "regex_ccno": "^VURV-R\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -207,7 +207,7 @@
     "code": "CARC:VURV:F",
     "country": "CZ",
     "homepage": "https://www.carc.cz/culturecollection/",
-    "name": "Collection of agriculturally important fungi",
+    "name": "Czech Agrifood Research Center: Collection of agriculturally important fungi",
     "regex_ccno": "^VURV-F\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -258,7 +258,7 @@
     "code": "UNITO:TUCC",
     "country": "IT",
     "homepage": "https://www.tucc.unito.it/en",
-    "name": "Turin University Culture Collection",
+    "name": "University of Turin: Turin University Culture Collection",
     "regex_ccno": "^TUCC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -276,7 +276,7 @@
     ],
     "code": "UNITO:MUT",
     "country": "IT",
-    "gbif": "fb36cacb-2b9f-4e53-9f4e-f1644f6953a0",
+    "gbif": "I:fb36cacb-2b9f-4e53-9f4e-f1644f6953a0",
     "homepage": "https://www.tucc.unito.it/en",
     "name": "Turin University Culture Collection - The Mycotheca Universitatis Taurinensis",
     "regex_ccno": "^MUT\\s*\\d+$",
@@ -293,7 +293,7 @@
     ],
     "code": "IAFB:CIM",
     "country": "PL",
-    "gbif": "a64756cd-e161-47bf-8329-72eb35a071b4",
+    "gbif": "I:a64756cd-e161-47bf-8329-72eb35a071b4",
     "homepage": "https://cim.ibprs.pl/",
     "name": "Collection of Industrial Microorganisms",
     "regex_ccno": "^CIM\\s*\\d+$",
@@ -319,16 +319,17 @@
   "115": {
     "acr": "PCM",
     "acr_synonym": [
-      "PASIFIC:PCM"
+      "PASIFIC:PCM",
+      "PAN:PCM"
     ],
     "active": true,
     "catalogue": [
       "https://www.pcm.org.pl/search/PCM?url=/search/{acr} {core}"
     ],
-    "code": "PASIFIC:PCM",
+    "code": "PAN:PCM",
     "country": "PL",
     "homepage": "https://www.pcm.org.pl/home",
-    "name": "Polish Collection of Microorganism",
+    "name": "Polish Academy of Sciences: Polish Collection of Microorganism",
     "regex_ccno": "^PCM\\s*\\d+-?(FY)?$",
     "regex_id": {
       "core": "\\d+",
@@ -343,10 +344,10 @@
     "catalogue": [
       "https://legeculturecollection.ciimar.up.pt/strains-front?search={acr}+{id}"
     ],
-    "code": "CIIMAR:LEGE:CC",
+    "code": "CIIMAR:LEGECC",
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
-    "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
+    "name": "Interdisciplinary Centre of Marine and Environmental Research: Blue Biotechnology and Ecotoxicology Culture Collection",
     "regex_ccno": "^LEGE\\s*(X(-|X))?\\d+M?$",
     "regex_id": {
       "core": "\\d+",
@@ -365,7 +366,7 @@
     "code": "UAC:BACA",
     "country": "PT",
     "homepage": "https:/baca.uac.pt",
-    "name": "Bank of Algae and Cyanobacteria of the Azores",
+    "name": "University of the Azores: Bank of Algae and Cyanobacteria of the Azores",
     "regex_ccno": "^BACA\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -381,7 +382,7 @@
     "code": "FFUP:CCP",
     "country": "PT",
     "homepage": "https://ccp.ff.up.pt",
-    "name": "Culture Collection of Porto",
+    "name": "University of Porto: Culture Collection of Porto",
     "regex_ccno": "^CCP\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -407,11 +408,11 @@
     "catalogue": [
       "https://www.nite.go.jp/nbrc/catalogue/NBRCCatalogueDetailServlet?ID=NBRC&CAT={core0:8}"
     ],
-    "code": "NOTE:NBRC",
+    "code": "NITE:NBRC",
     "country": "JP",
-    "gbif": "C:2f0ef18d-ca32-4ce2-8d4c-24f6f8c21da8",
+    "gbif": "I:abab42d0-0a95-4166-a0fc-6fe5cd9b66ff",
     "homepage": "https://www.nite.go.jp/en/nbrc/",
-    "name": "Biological Resource Center, NITE",
+    "name": "National Institute of Technology and Evaluation: Biological Resource Center",
     "regex_ccno": "^NBRC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -441,10 +442,10 @@
     "catalogue": [
       "https://ccy.sk/ppa_ccy_db/ccy-detail-en.php?q={id}"
     ],
-    "code": "SAS:CCY",
+    "code": "SAV:CCY",
     "country": "SK",
     "homepage": "https://www.ccy.sk/index.php/en/",
-    "name": "The Culture Collection of Yeasts",
+    "name": "Slovak Academy of Sciences: The Culture Collection of Yeasts",
     "regex_ccno": "^CCY\\s*\\d+-\\d+-\\d+$",
     "regex_id": {
       "full": "^\\d+-\\d+-\\d+$"
@@ -457,7 +458,7 @@
     "code": "ULPGC:BEA",
     "country": "ES",
     "homepage": "https://marinebiotechnology.org/en/beaen/about-us.html",
-    "name": "Spanish Bank of Algae",
+    "name": "Universidad of Las Palmas de Gran Canaria: Spanish Bank of Algae",
     "regex_ccno": "^BEA\\s*\\d+B?$",
     "regex_id": {
       "core": "\\d+",
@@ -492,6 +493,53 @@
       "full": "^\\d+$"
     }
   },
+  "125": {
+    "acr": "RAH",
+    "active": true,
+    "catalogue": [
+      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}&type=document&page=&spot=1"
+    ],
+    "code": "H:BAC",
+    "country": "FI",
+    "homepage": "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/infrastructures/microbial-domain-biological-resource-centre-hambi",
+    "name": "University of Helsinki: Microbial Domain Biological Resource Centre HAMBI (archaea, bacteria and phages)",
+    "regex_ccno": "^RAH\\s*\\.?\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
+  "126": {
+    "acr": "RAX",
+    "active": true,
+    "catalogue": [
+      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}&type=document&page=&spot=1"
+    ],
+    "code": "H:FBCC",
+    "country": "FI",
+    "gbif": "C:f47117bb-9b89-4dab-b2a3-e6fd68045d20",
+    "homepage": "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/infrastructures/microbial-domain-biological-resource-centre-hambi",
+    "name": "University of Helsinki: Microbial Domain Biological Resource Centre HAMBI (fungi)",
+    "regex_ccno": "^RAX\\s*\\.?\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
+  "127": {
+    "acr": "RAV",
+    "active": true,
+    "catalogue": [
+      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}&type=document&page=&spot=1"
+    ],
+    "code": "H:UHCC",
+    "country": "FI",
+    "gbif": "I:2fbf49fd-fdba-45c8-a106-1c618d608f47",
+    "homepage": "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/infrastructures/microbial-domain-biological-resource-centre-hambi",
+    "name": "University of Helsinki: Microbial Domain Biological Resource Centre HAMBI (cyanobacteria)",
+    "regex_ccno": "^RAV\\s*\\.?\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "13": {
     "acr": "IMI",
     "acr_synonym": [
@@ -521,12 +569,12 @@
     "country": "JP",
     "gbif": "I:fce1f744-ca76-46bb-9428-d92cfebe39d4",
     "homepage": "https://jcm.brc.riken.jp/en/",
-    "name": "Japan Collection of Microorganisms",
+    "name": "Institute of Physical and Chemical Research: Japan Collection of Microorganisms",
     "regex_ccno": "^JCM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
     },
-    "ror": "https://ror.org/00s05em53"
+    "ror": "00s05em53"
   },
   "15": {
     "acr": "IAM",
@@ -568,10 +616,10 @@
   "17": {
     "acr": "NRRL",
     "acr_synonym": [
-      "USDA:ARS:NRRL"
+      "USDA:NRRL"
     ],
     "active": true,
-    "code": "USDA:ARS:NRRL",
+    "code": "USDA:NRRL",
     "country": "US",
     "gbif": "C:7c9d0cb4-0cfa-4b6b-99e8-9defa67ed797",
     "homepage": "https://nrrl.ncaur.usda.gov/",
@@ -823,7 +871,7 @@
     "country": "SE",
     "gbif": "I:323cc3eb-16f5-4aa0-8126-f0ccdfe9b56d",
     "homepage": "https://www.ccug.se/",
-    "name": "Culture Collection University of Gothenburg",
+    "name": "University of Gothenburg: Culture Collection University of Gothenburg",
     "regex_ccno": "^CCUG\\s*\\d+(\\s*[AaBbCEQDFG]{1,2})?$",
     "regex_id": {
       "core": "\\d+",
@@ -876,7 +924,7 @@
     "country": "ES",
     "gbif": "I:8307579d-bc50-4d78-86e3-297868310f09",
     "homepage": "https://www.uv.es/uvweb/spanish-type-culture-collection/en/spanish-type-culture-collection-1285872233521.html",
-    "name": "Spanish Type Culture Collection",
+    "name": "University of Valencia: Spanish Type Culture Collection",
     "regex_ccno": "^CECT\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -896,7 +944,7 @@
     "country": "GB",
     "gbif": "I:ffd4bb75-a76d-47a9-868c-d53127538ecd",
     "homepage": "https://www.culturecollections.org.uk/",
-    "name": "National Collection of Type Cultures",
+    "name": "UK Health Security Agency: National Collection of Type Cultures",
     "regex_ccno": "^NCTC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -916,7 +964,7 @@
     "country": "GB",
     "gbif": "I:292973d5-0aec-41d0-95ab-2b9632d4b8d6",
     "homepage": "https://www.culturecollections.org.uk/",
-    "name": "National Collection of Pathogenic Viruses",
+    "name": "UK Health Security Agency: National Collection of Pathogenic Viruses",
     "regex_ccno": "^NCPV\\s*\\d+\\s*v$",
     "regex_id": {
       "core": "\\d+",
@@ -938,7 +986,7 @@
     "country": "GB",
     "gbif": "I:8dabebf9-789f-455a-b439-1c510b01fa19",
     "homepage": "https://www.culturecollections.org.uk/",
-    "name": "National Collection of Pathogenic Fungi",
+    "name": "UK Health Security Agency: National Collection of Pathogenic Fungi",
     "regex_ccno": "^NCPF\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -994,7 +1042,7 @@
     "country": "CZ",
     "gbif": "I:414400d6-9cc7-4d46-96a3-3e1d08dd8208",
     "homepage": "https://ccm.sci.muni.cz/en",
-    "name": "Czech Collection of Microorganisms",
+    "name": "Masaryk University: Czech Collection of Microorganisms",
     "regex_ccno": "^CCM\\s*(F-)?\\d+$",
     "regex_id": {
       "core": "\\d+",
@@ -1013,7 +1061,7 @@
     "country": "GB",
     "gbif": "I:1d599ee0-a749-42ca-b573-2f0170d75a42",
     "homepage": "https://www.fera.co.uk/ncppb",
-    "name": "National Collection of Plant Pathogenic Bacteria",
+    "name": "Fera Science: National Collection of Plant Pathogenic Bacteria",
     "regex_ccno": "^NCPPB\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1148,7 +1196,7 @@
     "country": "US",
     "gbif": "I:501449a3-a24c-4454-9669-3a3a888a7a48",
     "homepage": "https://ncma.bigelow.org/",
-    "name": "Culture Collection of Marine Phytoplankton",
+    "name": "National Center for Marine Algae and Microbiota: Culture Collection of Marine Phytoplankton",
     "regex_ccno": "^CCMP\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1174,11 +1222,16 @@
   },
   "48": {
     "acr": "HAMBI",
-    "active": true,
+    "acr_changed_to": [
+      {
+        "id": 125,
+        "type": "unknown"
+      }
+    ],
+    "active": false,
     "code": "HAMBI",
     "country": "FI",
     "gbif": "C:ff7ec00c-4e9d-40ce-b5ac-1b0ece7e2b9b",
-    "homepage": "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/infrastructures/microbial-domain-biological-resource-centre-hambi",
     "name": "Microbial Domain Biological Resource Centre HAMBI: Archaea, bacteria and phages",
     "regex_ccno": "^HAMBI[:]?\\s*\\d+$",
     "regex_id": {
@@ -1246,7 +1299,7 @@
     "country": "MA",
     "gbif": "I:20029597-8cfa-439e-a4c5-d2597fec7ac4",
     "homepage": "https://www.ccmm.ma/",
-    "name": "Moroccan Coordinated Collections of Microorganisms",
+    "name": "National Centre for Scientific and Technical Research: Moroccan Coordinated Collections of Microorganisms",
     "regex_ccno": "^CCMM\\s*[BL]\\s*\\d+$",
     "regex_id": {
       "core": "\\d+",
@@ -1395,7 +1448,7 @@
     ],
     "code": "LCR:ICMP",
     "country": "NZ",
-    "gbif": "22ff6145-71a0-4829-b099-bdbcccc9adba",
+    "gbif": "I:22ff6145-71a0-4829-b099-bdbcccc9adba",
     "homepage": "https://www.landcareresearch.co.nz/tools-and-resources/collections/icmp-culture-collection/",
     "name": "Landcare Research: International Collection of Microorganisms from Plants",
     "regex_ccno": "^ICMP\\s*\\d+$",
@@ -1423,14 +1476,19 @@
   },
   "61": {
     "acr": "FBCC",
+    "acr_changed_to": [
+      {
+        "id": 126,
+        "type": "unknown"
+      }
+    ],
     "acr_synonym": [
       "HAMBI:FBCC"
     ],
-    "active": true,
+    "active": false,
     "code": "HAMBI:FBCC",
     "country": "FI",
     "gbif": "C:f47117bb-9b89-4dab-b2a3-e6fd68045d20",
-    "homepage": "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/infrastructures/microbial-domain-biological-resource-centre-hambi",
     "name": "Microbial Domain Biological Resource Centre HAMBI: Fungi",
     "regex_ccno": "^FBCC\\s*\\d+$",
     "regex_id": {
@@ -1439,14 +1497,19 @@
   },
   "62": {
     "acr": "UHCC",
+    "acr_changed_to": [
+      {
+        "id": 127,
+        "type": "unknown"
+      }
+    ],
     "acr_synonym": [
       "HAMBI:UHCC"
     ],
-    "active": true,
+    "active": false,
     "code": "HAMBI:UHCC",
     "country": "FI",
     "gbif": "I:2fbf49fd-fdba-45c8-a106-1c618d608f47",
-    "homepage": "https://www.helsinki.fi/en/infrastructures/biodiversity-collections/infrastructures/microbial-domain-biological-resource-centre-hambi",
     "name": "Microbial Domain Biological Resource Centre HAMBI: Cyanobacteria",
     "regex_ccno": "^UHCC\\s*\\d+$",
     "regex_id": {
@@ -1511,7 +1574,7 @@
   "67": {
     "acr": "HUT",
     "active": true,
-    "code": "HUT",
+    "code": "HU:HUT",
     "country": "JP",
     "gbif": "I:1eab9329-3c75-41d0-9012-567301107b68",
     "homepage": "https://www.hiroshima-u.ac.jp/en",
@@ -1659,7 +1722,7 @@
     "country": "BR",
     "gbif": "I:f4f22ff0-c7d5-4816-acf3-0bcc05e2f389",
     "homepage": "https://cbmai.cpqba.unicamp.br/?lang=en",
-    "name": "Brazilian Collection of Microorganisms from the Environment and Industry",
+    "name": "Universidade Estadual de Campinas: Brazilian Collection of Microorganisms from the Environment and Industry",
     "regex_ccno": "^CBMAI\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1672,9 +1735,9 @@
     "catalogue": [
       "https://www.tbrcnetwork.org/microb_detail.php?code={acr}_{id}"
     ],
-    "code": "TBRC",
+    "code": "TBRC:TBRC",
     "country": "TH",
-    "gbif": "a47046da-867a-4a59-a0c2-5747223ffdc8",
+    "gbif": "I:a47046da-867a-4a59-a0c2-5747223ffdc8",
     "homepage": "https://www.tbrcnetwork.org/index.php",
     "name": "Thailand Bioresource Research Center",
     "regex_ccno": "^TBRC\\s*\\d+$",
@@ -1690,7 +1753,7 @@
     ],
     "code": "TBRC:BCC",
     "country": "TH",
-    "gbif": "a47046da-867a-4a59-a0c2-5747223ffdc8",
+    "gbif": "I:a47046da-867a-4a59-a0c2-5747223ffdc8",
     "homepage": "https://www.tbrcnetwork.org/index.php",
     "name": "Thailand Bioresource Research Center: BIOTEC Culture Collection",
     "regex_ccno": "^TBRC-BCC\\s*\\d+$",
@@ -1709,7 +1772,7 @@
     "active": false,
     "code": "BCC",
     "country": "TH",
-    "gbif": "d3980ac8-631b-4f66-93be-d8260075df2e",
+    "gbif": "I:d3980ac8-631b-4f66-93be-d8260075df2e",
     "name": "BIOTEC Culture Collection",
     "regex_ccno": "^BCC\\s*\\d+$",
     "regex_id": {
@@ -1727,7 +1790,7 @@
     ],
     "code": "TBRC:TISTR",
     "country": "TH",
-    "gbif": "a47046da-867a-4a59-a0c2-5747223ffdc8",
+    "gbif": "I:a47046da-867a-4a59-a0c2-5747223ffdc8",
     "homepage": "https://www.tbrcnetwork.org/index.php",
     "name": "Thailand Bioresource Research Center: Thailand Institute of Scientific and Technological Research",
     "regex_ccno": "^TISTR\\s*\\d+$",
@@ -1747,7 +1810,7 @@
     ],
     "code": "BCCM:MUCL",
     "country": "BE",
-    "gbif": "28b36aa2-3932-4ae9-81fb-c1e9ad12b459",
+    "gbif": "C:72e5ccb9-e435-4279-a1f5-edb3c9df9d6b",
     "homepage": "https://bccm.belspo.be/about-MUCL",
     "name": "Belgian Coordinated Collections of Microorganisms: MUCL - Environmental and applied mycology collection",
     "regex_ccno": "^MUCL\\s*\\d+$",
@@ -1766,7 +1829,7 @@
     ],
     "code": "TBRC:MSCU",
     "country": "TH",
-    "gbif": "a47046da-867a-4a59-a0c2-5747223ffdc8",
+    "gbif": "I:a47046da-867a-4a59-a0c2-5747223ffdc8",
     "homepage": "https://www.tbrcnetwork.org/index.php",
     "name": "Thailand Bioresource Research Center: Department of Microbiology, Faculty of Science, Chulalongkorn University",
     "regex_ccno": "^MSCU\\s*\\d+$",
@@ -1779,7 +1842,7 @@
     "active": false,
     "code": "ACM",
     "country": "AU",
-    "gbif": "f19044b5-789f-4993-8738-89543099e3ba",
+    "gbif": "I:f19044b5-789f-4993-8738-89543099e3ba",
     "name": "Australian Collection of Microorganisms",
     "regex_ccno": "^ACM\\s*\\d+$",
     "regex_id": {
@@ -1797,7 +1860,7 @@
     ],
     "code": "BCCM:DCG",
     "country": "BE",
-    "gbif": "28b36aa2-3932-4ae9-81fb-c1e9ad12b459",
+    "gbif": "C:35dcab04-d922-467a-912d-ddbd6c82f6b8",
     "homepage": "https://bccm.belspo.be/about-DCG",
     "name": "Belgian Coordinated Collections of Microorganisms: DCG - Diatoms Collection",
     "regex_ccno": "^DCG\\s*\\d+$",
@@ -1810,7 +1873,7 @@
     "active": false,
     "code": "RIA",
     "country": "RU",
-    "gbif": "0b9a97e7-5fac-4262-8ad0-76ff2c5af32b",
+    "gbif": "I:0b9a97e7-5fac-4262-8ad0-76ff2c5af32b",
     "name": "The Russia Research Institute for Antibiotics: Culture Collection",
     "regex_ccno": "^RIA\\s*\\d+$",
     "regex_id": {
@@ -1822,7 +1885,7 @@
     "active": false,
     "code": "IMRU",
     "country": "US",
-    "gbif": "b0f2e587-fc57-4804-a0ab-379414089677",
+    "gbif": "I:b0f2e587-fc57-4804-a0ab-379414089677",
     "name": "Waksman Institute of Microbiology",
     "regex_ccno": "^IMRU\\s*\\d+$",
     "regex_id": {
@@ -1832,11 +1895,11 @@
   "85": {
     "acr": "CCTCC",
     "active": true,
-    "code": "CCTCC",
+    "code": "WHU:CCTCC",
     "country": "CN",
-    "gbif": "35e7b362-dff5-4c91-82f0-477434981d9c",
+    "gbif": "I:35e7b362-dff5-4c91-82f0-477434981d9c",
     "homepage": "http://cctcc.whu.edu.cn/",
-    "name": "China Center for Type Culture Collection",
+    "name": "Wuhan University: China Center for Type Culture Collection",
     "regex_ccno": "^CCTCC\\s*(AF|AB|S|CB|DB|GB|HB|JB|KB|LB|NB|WB|ZB|CF|DF|HF|KF|WF|KY|WY|DY|AY|HY|CY|NY|KA|DA|AA|HA|CA|NA|M)?\\s*\\d+$",
     "regex_id": {
       "core": "\\d+",
@@ -1849,7 +1912,7 @@
     "active": false,
     "code": "YIM",
     "country": "CN",
-    "gbif": "ab7dfc16-b799-48bf-9ede-90bc3eae4174",
+    "gbif": "I:ab7dfc16-b799-48bf-9ede-90bc3eae4174",
     "name": "Yunnan Institute of Microbiology",
     "regex_ccno": "^YIM\\s*\\d+$",
     "regex_id": {
@@ -1894,9 +1957,9 @@
     "active": true,
     "code": "JE:JMRC",
     "country": "DE",
-    "gbif": "e195543b-f365-4a9e-ae47-c1bd5cc1f443",
+    "gbif": "I:e195543b-f365-4a9e-ae47-c1bd5cc1f443",
     "homepage": "https://www.mikrobiologie.uni-jena.de/en/institute/jena-microbial-resource-collection-jmrc",
-    "name": "The Jena Microbial Resource Collection",
+    "name": "Friedrich Schiller University Jena: The Jena Microbial Resource Collection",
     "regex_ccno": "^JMRC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1914,7 +1977,7 @@
     ],
     "code": "BCCM:IHEM",
     "country": "BE",
-    "gbif": "28b36aa2-3932-4ae9-81fb-c1e9ad12b459",
+    "gbif": "C:f1998bdd-8dc6-4f5c-92e4-3f04d9ff1595",
     "homepage": "https://bccm.belspo.be/about-IHEM",
     "name": "Belgian Coordinated Collections of Microorganisms: IHEM - Biomedical fungi & yeasts collection",
     "regex_ccno": "^IHEM\\s*\\d+$",
@@ -1925,17 +1988,15 @@
   "90": {
     "acr": "MTCC",
     "acr_synonym": [
-      "IMTECH:MTCC"
+      "IMTECH:MTCC",
+      "CSIR:MTCC"
     ],
     "active": true,
-    "catalogue": [
-      "https://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
-    ],
-    "code": "IMTECH:MTCC",
+    "code": "CSIR:MTCC",
     "country": "IN",
-    "gbif": "f4743a63-c919-4f2a-b3c2-8129171e7ab5",
-    "homepage": "https://www.imtech.res.in/facilities/microbial-type-culture-collection---mtcc",
-    "name": "The Microbial Type Culture Collection and Gene Bank",
+    "gbif": "I:f4743a63-c919-4f2a-b3c2-8129171e7ab5",
+    "homepage": "https://www.imtech.res.in/facilities/microbial-type-culture-collection-official-website-of-csir-institute-of-microbial-technology-ministry-of-science-technology-government-of-india",
+    "name": "Council of Scientific and Industrial Research: The Microbial Type Culture Collection and Gene Bank",
     "regex_ccno": "^MTCC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1964,7 +2025,7 @@
     "active": false,
     "code": "AMP",
     "country": "AU",
-    "gbif": "9fdd43dd-ecab-4952-97d6-4ad20ad5651e",
+    "gbif": "I:9fdd43dd-ecab-4952-97d6-4ad20ad5651e",
     "name": "Australian Mycological Panel",
     "regex_ccno": "^AMP\\s*\\d+$",
     "regex_id": {
@@ -1974,9 +2035,9 @@
   "93": {
     "acr": "KMM",
     "active": true,
-    "code": "KMM",
+    "code": "PIBOC:KMM",
     "country": "RU",
-    "gbif": "0671c014-5a82-4b45-94b8-d941820d5d98",
+    "gbif": "I:0671c014-5a82-4b45-94b8-d941820d5d98",
     "homepage": "http://www.piboc.dvo.ru/en/structure/biosintez/lab6.php",
     "name": "Pacific Institute of Bioorganic Chemistry: Collection of Marine Microorganisms",
     "regex_ccno": "^KMM\\s*\\d+$",
@@ -1987,10 +2048,10 @@
   "94": {
     "acr": "KCCM",
     "active": true,
-    "code": "KCCM",
+    "code": "KFCC:KCCM",
     "country": "KR",
-    "gbif": "5e9047de-b4e7-4c6a-be50-7a8b9563982c",
-    "name": "Department of Food Engineering: Korean Culture Center of Microorganisms",
+    "gbif": "I:5e9047de-b4e7-4c6a-be50-7a8b9563982c",
+    "name": "Korean Federation of Culture Collections: Korean Culture Center of Microorganisms",
     "regex_ccno": "^KCCM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2004,7 +2065,7 @@
     "active": false,
     "code": "PSU:OCM",
     "country": "US",
-    "gbif": "e5de596d-03d7-45a8-ab68-0d6f41dfaa4e",
+    "gbif": "I:6b4e828e-2d99-4d53-b3fe-727e701aa914",
     "name": "Portland State University: Oregon Collection of Methanogens",
     "regex_ccno": "^OCM\\s*\\d+$",
     "regex_id": {
@@ -2021,9 +2082,9 @@
     ],
     "code": "CAIM",
     "country": "MX",
-    "gbif": "e8cb76fc-2a7c-462d-b9f0-5f7f4728a779",
+    "gbif": "I:e8cb76fc-2a7c-462d-b9f0-5f7f4728a779",
     "homepage": "https://caim.ciad.mx",
-    "name": "Center of Research for Nutrition and Development: Collection of Aquacultural Important Microorganisms",
+    "name": "Collection of Aquatic Important Microorganisms",
     "regex_ccno": "^CAIM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2034,11 +2095,11 @@
     "acr_synonym": [
       "YU:CGSC"
     ],
-    "active": true,
+    "active": false,
     "code": "YU:CGSC",
     "country": "US",
-    "gbif": "0d56526b-f406-473d-bf65-7532d4d06d1d",
-    "name": "The Coli Genetic Stock Center",
+    "gbif": "I:0d56526b-f406-473d-bf65-7532d4d06d1d",
+    "name": "Yale University: The Coli Genetic Stock Center",
     "regex_ccno": "^CGSC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2068,7 +2129,7 @@
     "active": true,
     "code": "CPCC",
     "country": "CA",
-    "gbif": "58aaebd9-3feb-413c-8bd7-aa63f917d306",
+    "gbif": "I:58aaebd9-3feb-413c-8bd7-aa63f917d306",
     "homepage": "https://uwaterloo.ca/canadian-phycological-culture-centre/",
     "name": "University of Waterloo: Canadian Phycological Culture Centre",
     "regex_ccno": "^CPCC\\s*\\d+$",
