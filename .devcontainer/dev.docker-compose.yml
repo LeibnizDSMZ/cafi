@@ -11,4 +11,3 @@ services:
         - WORK_DIR=/workspace
     volumes:
       - .:/workspace
-      - ~/.config/git/config:/etc/gitconfig
