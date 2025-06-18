@@ -74,18 +74,18 @@
     "catalogue": [
       "https://norcca.scrol.net/strain/{pre}-{core0:4}"
     ],
-    "code": "NIVA:NORCCA",
+    "code": "NORCCA",
     "country": "NO",
-    "gbif": "0a03ced2-3c4d-4ca8-a334-0779ac71df3e",
+    "gbif": "a9ab29d6-f380-4193-967f-15a64abc09e7",
     "homepage": "https://norcca.scrol.net/",
-    "name": "The research institute for water and the environment: the Norwegian Culture Collection of Algae",
-    "regex_ccno": "^NORCCA\\s*K-\\d+$",
+    "name": "The Norwegian Culture Collection of Algae",
+    "regex_ccno": "^NORCCA\\s*(K|NIVA(-BAC|-CHL|-CYA)?|UIO)-\\d+(/\\d+)?$",
     "regex_id": {
-      "core": "\\d+",
-      "full": "^K-\\d+$",
-      "pre": "K"
+      "core": "\\d+(/\\d+)?",
+      "full": "^(K|NIVA(-BAC|-CHL|-CYA)?|UIO)-\\d+(/\\d+)?$",
+      "pre": "(K|NIVA(-BAC|-CHL|-CYA)?|UIO)"
     },
-    "ror": "03hrf8236"
+    "ror": "01xtthb56"
   },
   "102": {
     "acr": "HER",
@@ -244,11 +244,12 @@
     "country": "GR",
     "gbif": "47d75d87-8de9-4b3e-948d-4c5960cb7a33",
     "homepage": "http://www.aca-dc.gr/",
-    "name": "Greek Coordinated Collections of Microorganisms",
+    "name": "Agricultural College Of Athens: Dairy Collection",
     "regex_ccno": "^ACA-DC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
-    }
+    },
+    "ror": "03xawq568"
   },
   "111": {
     "acr": "TUCC",
@@ -282,7 +283,7 @@
     "country": "IT",
     "gbif": "fb36cacb-2b9f-4e53-9f4e-f1644f6953a0",
     "homepage": "https://www.tucc.unito.it/en",
-    "name": "Turin University Culture Collection - The Mycotheca Universitatis Taurinensis",
+    "name": "University of Turin: Turin University Culture Collection - The Mycotheca Universitatis Taurinensis",
     "regex_ccno": "^MUT\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
