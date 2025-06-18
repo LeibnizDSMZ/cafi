@@ -79,11 +79,11 @@
     "gbif": "a9ab29d6-f380-4193-967f-15a64abc09e7",
     "homepage": "https://norcca.scrol.net/",
     "name": "The Norwegian Culture Collection of Algae",
-    "regex_ccno": "^NORCCA\\s*(K|NIVA(-BAC|-CHL|-CYA)?|UIO)-\\d+(/\\d+)?$",
+    "regex_ccno": "^NORCCA\\s*K-\\d+$",
     "regex_id": {
-      "core": "\\d+(/\\d+)?",
-      "full": "^(K|NIVA(-BAC|-CHL|-CYA)?|UIO)-\\d+(/\\d+)?$",
-      "pre": "(K|NIVA(-BAC|-CHL|-CYA)?|UIO)"
+      "core": "\\d+",
+      "full": "^K-\\d+$",
+      "pre": "K"
     },
     "ror": "01xtthb56"
   },
@@ -338,10 +338,10 @@
     "country": "PL",
     "homepage": "https://www.pcm.org.pl/home",
     "name": "Polish Academy of Sciences: Polish Collection of Microorganism",
-    "regex_ccno": "^PCM\\s*\\d+-?(FY)?$",
+    "regex_ccno": "^PCM\\s*\\d+(-FY)?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^\\d+-?(FY)?$",
+      "full": "^\\d+(-FY)?$",
       "suf": "FY"
     },
     "ror": "01dr6c206"
@@ -562,6 +562,48 @@
       "full": "^\\d+$"
     }
   },
+  "128": {
+    "acr": "NIVA",
+    "acr_synonym": [
+      "NORCCA:NIVA"
+    ],
+    "active": true,
+    "catalogue": [
+      "https://norcca.scrol.net/strain/{acr}-{pre}-{core}"
+    ],
+    "code": "NORCCA:NIVA",
+    "country": "NO",
+    "gbif": "0a03ced2-3c4d-4ca8-a334-0779ac71df3e",
+    "homepage": "https://www.niva.no/",
+    "name": "The Norwegian Culture Collection of Algae: Norwegian Institute for Water Research",
+    "regex_ccno": "^NIVA(-(BAC|CHL|CYA))?\\s*\\d+(/\\d+)?$",
+    "regex_id": {
+      "core": "\\d+(/\\d+)?",
+      "full": "^(-(BAC|CHL|CYA))?\\s*\\d+(/\\d+)?$",
+      "pre": "-(BAC|CHL|CYA)"
+    },
+    "ror": "03hrf8236"
+  },
+  "129": {
+    "acr": "UIO",
+    "acr_synonym": [
+      "NORCCA:UIO"
+    ],
+    "active": true,
+    "catalogue": [
+      "https://norcca.scrol.net/strain/{acr}-{id}"
+    ],
+    "code": "NORCCA:UIO",
+    "country": "NO",
+    "gbif": "a9ab29d6-f380-4193-967f-15a64abc09e7",
+    "homepage": "https://www.niva.no/",
+    "name": "The Norwegian Culture Collection of Algae: University of Oslo (UiO)",
+    "regex_ccno": "^UIO\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    },
+    "ror": "01xtthb56"
+  },
   "13": {
     "acr": "IMI",
     "acr_synonym": [
@@ -591,7 +633,7 @@
     "country": "JP",
     "gbif": "fce1f744-ca76-46bb-9428-d92cfebe39d4",
     "homepage": "https://jcm.brc.riken.jp/en/",
-    "name": "apan Collection of Microorganisms",
+    "name": "Japan Collection of Microorganisms",
     "regex_ccno": "^JCM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -646,7 +688,7 @@
     "country": "US",
     "gbif": "7c9d0cb4-0cfa-4b6b-99e8-9defa67ed797",
     "homepage": "https://nrrl.ncaur.usda.gov/",
-    "name": "USDA Agricultural Research Service (ARS): Culture Collection (NRRL)",
+    "name": "USDA Agricultural Research Service (ARS) - Culture Collection (NRRL)",
     "regex_ccno": "^NRRL\\s*((L|ISP|WC|HD|NRS|S|BD|B|YB|Y)-)?\\d+$",
     "regex_id": {
       "core": "\\d+",
@@ -1055,6 +1097,11 @@
   },
   "38": {
     "acr": "CCM",
+    "acr_synonym": [
+      "MU:CCM",
+      "MUNISCI:CCM",
+      "MUNI:SCI:CCM"
+    ],
     "active": true,
     "catalogue": [
       "https://ccm.sci.muni.cz/en/catalogue-of-cultures/bacteria-and-archaea/bakterie/htmlb/{id}",
@@ -1560,7 +1607,7 @@
     "code": "PTCCI",
     "country": "IR",
     "gbif": "604a07c9-2419-4a12-9d03-9017d2dc97c6",
-    "name": "Iranian Research Organization for Science and Technology (IROST): Persian Type Culture Collection",
+    "name": "Persian Type Culture Collection",
     "regex_ccno": "^PTCC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1616,7 +1663,7 @@
     "country": "JP",
     "gbif": "1eab9329-3c75-41d0-9012-567301107b68",
     "homepage": "https://www.hiroshima-u.ac.jp/en",
-    "name": "Hiroshima University: HUT Culture Collection",
+    "name": "HUT Culture Collection",
     "regex_ccno": "^HUT\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1763,7 +1810,7 @@
     "country": "BR",
     "gbif": "f4f22ff0-c7d5-4816-acf3-0bcc05e2f389",
     "homepage": "https://cbmai.cpqba.unicamp.br/?lang=en",
-    "name": "Universidade Estadual de Campinas: Brazilian Collection of Microorganisms from the Environment and Industry",
+    "name": "Brazilian Collection of Microorganisms from the Environment and Industry",
     "regex_ccno": "^CBMAI\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2004,7 +2051,7 @@
     "country": "DE",
     "gbif": "e195543b-f365-4a9e-ae47-c1bd5cc1f443",
     "homepage": "https://www.mikrobiologie.uni-jena.de/en/institute/jena-microbial-resource-collection-jmrc",
-    "name": "Friedrich Schiller University Jena: The Jena Microbial Resource Collection",
+    "name": "The Jena Microbial Resource Collection",
     "regex_ccno": "^JMRC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2043,7 +2090,7 @@
     "country": "IN",
     "gbif": "f4743a63-c919-4f2a-b3c2-8129171e7ab5",
     "homepage": "https://www.imtech.res.in/facilities/microbial-type-culture-collection-official-website-of-csir-institute-of-microbial-technology-ministry-of-science-technology-government-of-india",
-    "name": "Council of Scientific and Industrial Research: The Microbial Type Culture Collection and Gene Bank",
+    "name": "The Microbial Type Culture Collection and Gene Bank",
     "regex_ccno": "^MTCC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2089,7 +2136,7 @@
     "country": "RU",
     "gbif": "0671c014-5a82-4b45-94b8-d941820d5d98",
     "homepage": "https://piboc.dvo.ru/en/structure/biosintez/kmm.php",
-    "name": "Pacific Institute of Bioorganic Chemistry: Collection of Marine Microorganisms",
+    "name": "Collection of Marine Microorganisms",
     "regex_ccno": "^KMM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2104,7 +2151,7 @@
     "code": "KCCM",
     "country": "KR",
     "gbif": "5e9047de-b4e7-4c6a-be50-7a8b9563982c",
-    "name": "Korean Federation of Culture Collections: Korean Culture Center of Microorganisms",
+    "name": "Korean Culture Center of Microorganisms",
     "regex_ccno": "^KCCM\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -2156,7 +2203,7 @@
     "country": "US",
     "gbif": "0d56526b-f406-473d-bf65-7532d4d06d1d",
     "homepage": "https://ecgrc.net/",
-    "name": "Yale University: The Coli Genetic Stock Center",
+    "name": "The Coli Genetic Stock Center",
     "regex_ccno": "^CGSC\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
