@@ -1302,7 +1302,6 @@
     ],
     "code": "NCMA",
     "country": "US",
-    "gbif": "501449a3-a24c-4454-9669-3a3a888a7a48",
     "homepage": "https://ncma.bigelow.org/",
     "name": "Provasoli-Guillard National Center for Marine Algae and Microbiota",
     "regex_ccno": "^NCMA\\s*B\\s*\\d+$",
