@@ -588,7 +588,7 @@
     "code": "NORCCA:NIVA",
     "country": "NO",
     "gbif": "0a03ced2-3c4d-4ca8-a334-0779ac71df3e",
-    "homepage": "https://www.niva.no/",
+    "homepage": "https://norcca.scrol.net/",
     "name": "The Norwegian Culture Collection of Algae: Norwegian Institute for Water Research",
     "regex_ccno": "^NIVA(-(BAC|CHL|CYA))?\\s*\\d+(/\\d+)?$",
     "regex_id": {
@@ -610,7 +610,7 @@
     "code": "NORCCA:UIO",
     "country": "NO",
     "gbif": "a9ab29d6-f380-4193-967f-15a64abc09e7",
-    "homepage": "https://www.niva.no/",
+    "homepage": "https://norcca.scrol.net/",
     "name": "The Norwegian Culture Collection of Algae: University of Oslo (UiO)",
     "regex_ccno": "^UIO\\s*\\d+$",
     "regex_id": {
@@ -1123,8 +1123,7 @@
     "active": true,
     "catalogue": [
       "https://ccm.sci.muni.cz/en/catalogue-of-cultures/bacteria-and-archaea/bakterie/htmlb/{id}",
-      "https://ccm.sci.muni.cz/en/catalogue-of-cultures/filamentous-fungi-and-yeasts/houby/htmlh/{pre}-{core}",
-      "https://ccm.sci.muni.cz/en/catalogue-of-cultures/filamentous-fungi-and-yeasts/houby/htmlh/{core}",
+      "https://ccm.sci.muni.cz/en/catalogue-of-cultures/filamentous-fungi-and-yeasts/houby/htmlh/{pre}<->{core}",
       "https://ccm.sci.muni.cz/en/catalogue-of-cultures/bacteriophages/fagy/htmlp/{id}"
     ],
     "code": "CCM",
@@ -1501,14 +1500,11 @@
   },
   "58": {
     "acr": "DBVPG",
-    "acr_synonym": [
-      "DSAAA:LI"
-    ],
     "active": true,
     "catalogue": [
       "https://dsa3.unipg.it/DBVPG/en/lievito/?id={id}"
     ],
-    "code": "DSAAA:LI",
+    "code": "DBVPG",
     "country": "IT",
     "gbif": "61ce4e98-3514-4f4e-8230-5a388d8e4a5a",
     "homepage": "https://dsa3.unipg.it/DBVPG/en/",
@@ -1623,7 +1619,7 @@
       "IROST:PTCC"
     ],
     "active": true,
-    "code": "PTCCI",
+    "code": "PTCC",
     "country": "IR",
     "gbif": "604a07c9-2419-4a12-9d03-9017d2dc97c6",
     "homepage": "https://oldweb.irost.org/ptcc/en/about-us",
