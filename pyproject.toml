@@ -226,6 +226,7 @@ fail_under = 50
 [tool.vulture]
 paths = ["configs/dev/whitelist.py", "src"]
 ignore_decorators = ["@*"]
+ignore_names = ["model_config", "formatwarning"]
 make_whitelist = true
 min_confidence = 60
 sort_by_size = true
