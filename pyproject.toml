@@ -199,6 +199,7 @@ requires = ["tox>=4.23"]
 
 [tool.tox.env_run_base]
 allowlist_externals = ["coverage"]
+set_env = { PYTHONPATH = "src" }
 commands = [
   [
     "coverage",
