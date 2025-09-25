@@ -223,7 +223,7 @@ commands = [
 ]
 
 [tool.coverage.run]
-source = ["src"]
+source = ["src/cafi"]
 parallel = true
 
 [tool.coverage.report]
