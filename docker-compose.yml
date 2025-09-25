@@ -1,10 +1,13 @@
 services:
   deploy:
+    env_file:
+      - .env
     build:
       context: .
       dockerfile: ./Dockerfile
       args:
-        - USERNAME=devu
-        - USER_UID=1000
-        - USER_GID=1000
-        - WORK_DIR=/workspace
+        USERNAME: devu
+        USER_UID: 1000
+        USER_GID: 1000
+        WORK_DIR: "/workspace"
+        UV: ${UV_INSTALL_DIR}
