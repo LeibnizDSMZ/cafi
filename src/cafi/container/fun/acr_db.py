@@ -28,8 +28,6 @@ def remove_empty_dict_keys(dict_con: Any, /) -> dict[str, Any]:
         shallow_copy[key] = buf
 
     for key, val in shallow_copy.items():
-        if not isinstance(key, str):
-            to_rem.add(key)
         if isinstance(val, Sized) and len(val) == 0:
             to_rem.add(key)
         if isinstance(val, int) and val < 0:
