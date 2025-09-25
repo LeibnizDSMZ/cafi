@@ -16,6 +16,13 @@ dependencies = [
 [project.scripts]
 acr_db = "cafi.main:run"
 
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["cafi"]
+
+[tool.setuptools.package-data]
+cafi = ["data/*", "py.typed"]
+
 [tool.uv]
 package = true
 default-groups = []
