@@ -89,5 +89,3 @@ pre-push:
   commands:
     tests:
       run: "tox"
-    git-lfs:
-      run: "git lfs pre-push"
