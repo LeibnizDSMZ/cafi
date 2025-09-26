@@ -1,3 +1,52 @@
+## v0.9.0 (2025-09-26)
+
+### BREAKING CHANGE
+
+- A lot of codes changed
+- New gbif schema
+
+### Feat
+
+- add local active countries
+- **PTCC**: added working homepage URL
+- add prefix and ror to LEGE
+- add a stricter acronym verification
+- add CCOS to database
+- add BMCC to database
+- add CCY to database
+- add IPPAS to database
+- add IEGM to database
+- add CCP to database
+- add BACA to database
+- add LEGE-CC to database
+- added 4 more ECCO collections to the database The collections were: Turin University Culture Collection (TUCC), Collection of Industrial Microorganisms (IAFB), Collection of Plasmids and Microorganisms (KPD), Polish Collection of Microorganism (PCM)
+- **acr_db.json,regex_db.json**: added entry for ACA-DC
+
+### Fix
+
+- correct minor mistakes
+- **NCMA**: removed gbif reference to old collection name
+- **acr_db,-regex_db**: added missing ror and gbif references, more uniform codes, fixed URL
+- **acr_db.json,-catalogue_db.json,-regex_db.json**: split NORCCA into merged collections acronyms (NIVA/UIO)
+- added missing prefixes and aligned names with codes
+- validated activity, codes, gbif and catalogue urls
+- started implementing revised database schema and rules
+- implemented new rules for code and name creation
+- better accuarcy of ccno regex for IEGM and IPPAS
+- patch tucc and mut
+- VURV entries
+
+### Refactor
+
+- remove redundant key string check
+- **acr_db.json,-catalogue_db.json,-regex_db.json**: checking of acronym db entries alphanumerically up to 75 (CBMAI)
+- **acr_db.json,-catalogue_db.json,-regex_db.json**: check existing acronym db entries
+- add new ulc designation to catalog check
+- patch pull request #19
+- add missing contributor
+- update dependencies
+- add DOI to readme.md
+
 ## v0.8.0 (2025-02-14)
 
 ### Feat
