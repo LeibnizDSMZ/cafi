@@ -4,6 +4,13 @@ output:
 pre-commit:
   piped: true
   jobs:
+    - name: country_code
+      group:
+        piped: true
+        jobs:
+          - name: generate
+            run: sh bin/country_codes.sh
+            stage_fixed: true
     - name: check
       group:
         parallel: true

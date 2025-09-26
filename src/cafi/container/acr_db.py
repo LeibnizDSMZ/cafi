@@ -13,6 +13,8 @@ from pydantic import (
 )
 from uuid import UUID
 
+from cafi.container.country import CountryCodes
+
 type _UrlStr = Annotated[HttpUrl, PlainSerializer(lambda val: str(val), return_type=str)]
 type _UuidStr = Annotated[UUID, PlainSerializer(lambda val: str(val), return_type=str)]
 
@@ -57,7 +59,11 @@ class AcrDbEntry(BaseModel):
     acr: Annotated[str, Field(min_length=2, pattern=r"^[A-Z:]+$")]
     code: Annotated[str, Field(min_length=2, pattern=r"^[A-Z:]+$")]
     name: Annotated[str, Field(min_length=2)]
-    country: Annotated[str, Field(pattern=r"^[A-Z]{2}$")]
+    country: Annotated[
+        str,
+        Field(pattern=r"^[A-Z]{2}$"),
+        AfterValidator(CountryCodes().is_code),
+    ]
     active: bool
     regex_ccno: Annotated[str, Field(min_length=4), AfterValidator(_is_regex)]
     regex_id: AcrCoreReg
