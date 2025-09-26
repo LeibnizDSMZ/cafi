@@ -2,8 +2,9 @@ from collections import defaultdict
 from re import Pattern
 import re
 from typing import Any, Callable, Final, Sequence, Sized
-from cafi.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
+from urllib.parse import quote
 
+from cafi.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
 from cafi.container.acr_db import AcrDbEntry, AcrChaT, CatArgs
 from cafi.container.fun.format import url_to_str
 from cafi.errors.custom_exceptions import ValJsonEx
@@ -214,5 +215,5 @@ def replace_param_value(href: str, args: CatArgs, /) -> str:
     for che, repl in _REPL_PARAM.items():
         for mat in che.finditer(href):
             for to_repl, repl_val in repl(mat.group(0), args).items():
-                href = href.replace(to_repl, repl_val)
+                href = href.replace(to_repl, quote(repl_val, safe=""))
     return href
