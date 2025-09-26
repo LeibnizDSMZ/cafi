@@ -1,6 +1,6 @@
 [project]
 name = "cafi"
-version = "0.9.2"
+version = "0.9.3"
 description = "This project acts as a registry for acronyms used by culture collections."
 readme = "README.md"
 authors = [{ name = "Artur Lissin", email = "artur.lissin@dsmz.de" }]
