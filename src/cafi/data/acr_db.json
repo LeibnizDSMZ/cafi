@@ -1765,7 +1765,6 @@
     "code": "CIRM:BP",
     "country": "FR",
     "gbif": "316a147d-49ad-440b-90fc-e46845e044d6",
-    "homepage": "https://catalogue-cirm-bp.tours.inra.fr/isp/collection/IIindex.php?lang=eng",
     "name": "International Center for Microbial Resources: BP Pathogenic bacteria",
     "regex_ccno": "^CIRMBP(\\s+|-)\\d+$",
     "regex_id": {
