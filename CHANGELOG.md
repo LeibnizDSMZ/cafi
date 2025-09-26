@@ -1,3 +1,11 @@
+## v0.9.1 (2025-09-26)
+
+### Fix
+
+- remove outdated cgmcc catalogue
+- correct catalogue url for 115
+- correct prefix structure and homepage for 102
+
 ## v0.9.0 (2025-09-26)
 
 ### BREAKING CHANGE
