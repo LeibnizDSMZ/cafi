@@ -43,7 +43,7 @@ runAct:
 	bash --init-file /tmp/$(RAN)
 
 runChecks:
-	$(UVE) run lefthook run pre-commit --all-files -f
+	LEFTHOOK_EXCLUDE=dev $(UVE) run lefthook run pre-commit --all-files -f
 
 runDocs:
 	$(UVE) run mkdocs build -f configs/dev/mkdocs.yml -d ../../public
