@@ -334,7 +334,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://www.pcm.org.pl/search/PCM?url=/search/{acr} {id}"
+      "https://www.pcm.org.pl/search/{acr} {id}"
     ],
     "code": "PCM",
     "country": "PL",
