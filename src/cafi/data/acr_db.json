@@ -811,9 +811,6 @@
   "22": {
     "acr": "CGMCC",
     "active": true,
-    "catalogue": [
-      "https://www.cgmcc.net/english/search?stn={acr}+{id}"
-    ],
     "code": "CGMCC",
     "country": "CN",
     "gbif": "ffff0a26-d2c0-46b3-a359-e9e8310ce20b",
