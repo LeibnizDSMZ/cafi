@@ -1,5 +1,4 @@
-#!/usr/bin/env bash
-set -euo pipefail
+#!/bin/bash
 
 # Output file path (can be adjusted)
 OUTPUT_FILE="src/cafi/data/country_codes.txt"
