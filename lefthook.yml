@@ -5,6 +5,7 @@ pre-commit:
   piped: true
   jobs:
     - name: country_code
+      tags: [dev]
       group:
         piped: true
         jobs:
