@@ -1,3 +1,10 @@
+## v0.9.2 (2025-09-26)
+
+### Fix
+
+- escape all url arguments during creation
+- remove cirm homepage
+
 ## v0.9.1 (2025-09-26)
 
 ### Fix
