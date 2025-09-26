@@ -96,7 +96,7 @@
     "code": "HER",
     "country": "CA",
     "gbif": "1010d88d-792b-4b6b-998c-0eec5dbf0d6b",
-    "homepage": "https://www.phage.ulaval.ca/en/home/",
+    "homepage": "https://www.phage.ulaval.ca/en",
     "name": "Felix d'Herelle Reference Center for Bacterial Viruses",
     "regex_ccno": "^HER\\s*\\d+$",
     "regex_id": {
@@ -365,11 +365,11 @@
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
     "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
-    "regex_ccno": "^LEGE\\s*(X(-|X))?\\d+M?$",
+    "regex_ccno": "^LEGE\\s*(XX?-?)?\\d+M?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^(X(-|X))?\\d+M?$",
-      "pre": "X(-|X)",
+      "full": "^(XX?-?)?\\d+M?$",
+      "pre": "XX?",
       "suf": "M"
     },
     "ror": "05p7z7s64"
@@ -594,7 +594,7 @@
     "regex_id": {
       "core": "\\d+(/\\d+)?",
       "full": "^(-(BAC|CHL|CYA))?\\s*\\d+(/\\d+)?$",
-      "pre": "-(BAC|CHL|CYA)"
+      "pre": "(BAC|CHL|CYA)"
     },
     "ror": "03hrf8236"
   },
