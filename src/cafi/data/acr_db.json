@@ -583,7 +583,8 @@
     ],
     "active": true,
     "catalogue": [
-      "https://norcca.scrol.net/strain/{acr}-{pre}-{core}"
+      "https://norcca.scrol.net/strain/{acr}-{pre}-{core}",
+      "https://norcca.scrol.net/strain/{acr}-{pre}-{core:1}{core:2}"
     ],
     "code": "NORCCA:NIVA",
     "country": "NO",
