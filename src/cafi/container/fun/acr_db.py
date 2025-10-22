@@ -5,14 +5,10 @@ from typing import Any, Callable, Final, Sequence, Sized
 from urllib.parse import quote
 
 from cafi.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
-from cafi.container.acr_db import AcrDbEntry, AcrChaT, CatArgs
+from cafi.container.acr_db import AcrDbEntry, CatArgs
 from cafi.container.fun.format import url_to_str
 from cafi.errors.custom_exceptions import ValJsonEx
 from pydantic import HttpUrl
-
-
-def get_brc_merge_type() -> list[str]:
-    return [str(cha.value) for cha in AcrChaT]
 
 
 def remove_empty_dict_keys(dict_con: Any, /) -> dict[str, Any]:
