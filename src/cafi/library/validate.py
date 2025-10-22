@@ -294,8 +294,7 @@ def validate_regex_db(
 
 
 def validate_catalogue_db(to_eval: dict[str, Any], acr_db: ACR_DB_T, /) -> CCNO_DB_T:
-    """
-    Validates and creates a catalogue database from input data.
+    """Validates and creates a catalogue database from input data.
 
     Args:
         to_eval (dict[str, Any]): The input dictionary containing raw catalogue data.

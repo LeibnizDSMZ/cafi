@@ -3,8 +3,7 @@ from cafi.library.loader import load_acr_db
 
 
 def run() -> None:
-    """
-    Attempts to load the ACR database or handle version compatibility issues.
+    """Attempts to load the ACR database or handle version compatibility issues.
 
     This function is intended to be the entry point for running the application.
     Currently, it attempts to load the ACR

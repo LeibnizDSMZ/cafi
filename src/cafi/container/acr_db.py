@@ -1,6 +1,5 @@
 from dataclasses import dataclass
 from enum import Enum
-import re
 from typing import Annotated, Final, final
 from pydantic import (
     BaseModel,
@@ -14,17 +13,11 @@ from pydantic import (
 from uuid import UUID
 
 from cafi.container.country import CountryCodes
+from cafi.container.fun.format import is_regex
+
 
 type _UrlStr = Annotated[HttpUrl, PlainSerializer(lambda val: str(val), return_type=str)]
 type _UuidStr = Annotated[UUID, PlainSerializer(lambda val: str(val), return_type=str)]
-
-
-def _is_regex(val: str) -> str:
-    try:
-        re.compile(val)
-    except re.error as err:
-        raise ValueError("Regex has a wrong format") from err
-    return val
 
 
 # TODO define more types
@@ -46,10 +39,10 @@ class AcrChaCon(BaseModel):
 class AcrCoreReg(BaseModel):
     model_config = ConfigDict(frozen=True, extra="forbid", validate_default=False)
 
-    full: Annotated[str, Field(min_length=2), AfterValidator(_is_regex)]
-    core: Annotated[str, Field(min_length=2), AfterValidator(_is_regex)] = ""
-    pre: Annotated[str, Field(min_length=1), AfterValidator(_is_regex)] = ""
-    suf: Annotated[str, Field(min_length=1), AfterValidator(_is_regex)] = ""
+    full: Annotated[str, Field(min_length=2), AfterValidator(is_regex)]
+    core: Annotated[str, Field(min_length=2), AfterValidator(is_regex)] = ""
+    pre: Annotated[str, Field(min_length=1), AfterValidator(is_regex)] = ""
+    suf: Annotated[str, Field(min_length=1), AfterValidator(is_regex)] = ""
 
 
 @final
@@ -65,7 +58,7 @@ class AcrDbEntry(BaseModel):
         AfterValidator(CountryCodes().is_code),
     ]
     active: bool
-    regex_ccno: Annotated[str, Field(min_length=4), AfterValidator(_is_regex)]
+    regex_ccno: Annotated[str, Field(min_length=4), AfterValidator(is_regex)]
     regex_id: AcrCoreReg
     ror: Annotated[str, Field(min_length=1)] = ""
     # gbif: _UuidStr | None = None
