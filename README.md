@@ -70,6 +70,7 @@
 ## Contributors
 
 - Isabel Schober
+- Artur Lissin
 - Julius Witte
 - Helko Lüken
 
