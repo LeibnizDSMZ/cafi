@@ -226,7 +226,14 @@ def _validate_acr_db_dc(acr_db: ACR_DB_T, /) -> None:
         check_uri_template(acr_con.catalogue)
         uni_gen.add(_check_unique_gen(uni_gen, acr_con))
         uni_gid.add(_check_unique_gid(uni_gid, acr_con, lambda db: db.ror, "ror"))
-        uni_gid.add(_check_unique_gid(uni_gid, acr_con, lambda db: db.gbif, "gbif"))
+        uni_gid.add(
+            _check_unique_gid(
+                uni_gid,
+                acr_con,
+                lambda db: "" if db.gbif is None else str(db.gbif),
+                "gbif",
+            )
+        )
         _check_db_composition(acr_con, acr_db)
         _check_acr(acr_con.acr)
         _check_regex(acr_con.regex_ccno, acr_con.regex_id, acr_id)
