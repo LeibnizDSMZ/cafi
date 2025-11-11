@@ -1,3 +1,10 @@
+## v0.9.4 (2025-11-11)
+
+### Refactor
+
+- **acr_db**: update gbif field type to _UuidStr
+- update dev environment, codebase, and lint configuration
+
 ## v0.9.3 (2025-09-26)
 
 ### Fix
