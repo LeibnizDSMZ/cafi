@@ -1,4 +1,4 @@
 from typing import Final
 
-CURRENT_VER: Final[str] = "v0.9.4"
+CURRENT_VER: Final[str] = "v0.9.5"
 STABLE_VER: Final[str] = "main"
