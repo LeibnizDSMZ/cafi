@@ -1078,12 +1078,12 @@
     "acr": "VTT",
     "active": true,
     "catalogue": [
-      "http://culturecollection.vtt.fi/m/html?p=sti&code={id}"
+      "https://culturecollection.vtt.fi/m/html?p=sti&code={id}"
     ],
     "code": "VTT",
     "country": "FI",
     "gbif": "19922d64-f9fa-43dc-bf4f-4fd5274b34bc",
-    "homepage": "http://culturecollection.vtt.fi/",
+    "homepage": "https://culturecollection.vtt.fi/",
     "name": "Technical Research Center of Finland: VTT - Culture Collection",
     "regex_ccno": "^VTT\\s*[ABCDE]-\\d+$",
     "regex_id": {
@@ -1247,7 +1247,7 @@
     "code": "NCAIM",
     "country": "HU",
     "gbif": "ea042248-bd22-411c-9596-01e55c077483",
-    "homepage": "http://ncaim.etk.szie.hu/",
+    "homepage": "https://ncaim.etk.szie.hu/",
     "name": "National Collection of Agricultural and Industrial Microorganisms",
     "regex_ccno": "^NCAIM\\s*[BYF][.\\s-]\\d+$",
     "regex_id": {
@@ -1555,12 +1555,12 @@
     "acr": "VKM",
     "active": true,
     "catalogue": [
-      "http://www.vkm.ru/strains.php?vkm={id}"
+      "https://www.vkm.ru/strains.php?vkm={pre}-{id}"
     ],
     "code": "VKM",
     "country": "RU",
     "gbif": "2101b8a6-52f3-4c94-a174-e5fa990c9260",
-    "homepage": "http://www.vkm.ru/Catalogue.htm",
+    "homepage": "https://www.vkm.ru/Catalogue.htm",
     "name": "Institute of Biochemistry and Physiology of Microorganisms: All-Russian Collection of Microorganisms",
     "regex_ccno": "^VKM\\s*(Ac|B|F|Y)-\\d+$",
     "regex_id": {
@@ -1650,7 +1650,7 @@
     "code": "NBIMCC",
     "country": "BG",
     "gbif": "b98d42bc-27e9-4f0b-998c-f59332bcf12b",
-    "homepage": "http://www.nbimcc.org/www_2020/en/index.php",
+    "homepage": "https://www.nbimcc.org/www_2020/en/index.php",
     "name": "National Bank for Industrial Microorganisms and Cell Cultures",
     "regex_ccno": "^NBIMCC\\s*\\d+$",
     "regex_id": {
@@ -1663,7 +1663,7 @@
     "code": "MUM",
     "country": "PT",
     "gbif": "dfdd9fce-e4b9-4444-a86b-bb68b2b2ef48",
-    "homepage": "http://www.micoteca.deb.uminho.pt",
+    "homepage": "https://www.micoteca.deb.uminho.pt",
     "name": "Micoteca da Universidade do Minho",
     "regex_ccno": "^MUM\\s*\\d+(\\.\\d+)?$",
     "regex_id": {
@@ -2005,7 +2005,7 @@
     "code": "CCTCC",
     "country": "CN",
     "gbif": "35e7b362-dff5-4c91-82f0-477434981d9c",
-    "homepage": "http://cctcc.whu.edu.cn/",
+    "homepage": "https://cctcc.whu.edu.cn/",
     "name": "China Center for Type Culture Collection",
     "regex_ccno": "^CCTCC\\s*(AF|AB|S|CB|DB|GB|HB|JB|KB|LB|NB|WB|ZB|CF|DF|HF|KF|WF|KY|WY|DY|AY|HY|CY|NY|KA|DA|AA|HA|CA|NA|M)?\\s*\\d+$",
     "regex_id": {
