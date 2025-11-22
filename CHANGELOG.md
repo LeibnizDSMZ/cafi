@@ -1,3 +1,9 @@
+## v0.9.6 (2025-11-22)
+
+### Refactor
+
+- change some links to https
+
 ## v0.9.5 (2025-11-11)
 
 ### Fix
