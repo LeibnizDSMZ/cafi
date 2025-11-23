@@ -2100,7 +2100,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
+      "http://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
     ],
     "code": "MTCC",
     "country": "IN",
