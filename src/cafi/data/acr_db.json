@@ -91,7 +91,8 @@
     "acr": "HER",
     "active": true,
     "catalogue": [
-      "https://www.phage.ulaval.ca/?pageDemandee=phage&noPhage={id}&id=41&L=1"
+      "https://www.phage.ulaval.ca/en/souches/{id}",
+      "https://www.phage.ulaval.ca/en/phages/{id}"
     ],
     "code": "HER",
     "country": "CA",
@@ -400,7 +401,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://ccp.ff.up.pt/ccp-{id}"
+      "https://ccp.ff.up.pt/{acr}-{id}"
     ],
     "code": "CCP",
     "country": "PT",
@@ -526,7 +527,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}&type=document&page=&spot=1"
+      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}"
     ],
     "code": "HAMBI:BAC",
     "country": "FI",
@@ -545,7 +546,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}&type=document&page=&spot=1"
+      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}"
     ],
     "code": "HAMBI:FBCC",
     "country": "FI",
@@ -564,7 +565,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}&type=document&page=&spot=1"
+      "https://kotka.luomus.fi/view?uri=http://tun.fi/{acr}.{id}"
     ],
     "code": "HAMBI:UHCC",
     "country": "FI",
@@ -642,7 +643,7 @@
     "acr": "JCM",
     "active": true,
     "catalogue": [
-      "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM={id}"
+      "https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?{acr}={id}"
     ],
     "code": "JCM",
     "country": "JP",
