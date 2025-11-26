@@ -1,3 +1,9 @@
+## v0.9.8 (2025-11-26)
+
+### Refactor
+
+- update catlogue links
+
 ## v0.9.7 (2025-11-23)
 
 ### Refactor
