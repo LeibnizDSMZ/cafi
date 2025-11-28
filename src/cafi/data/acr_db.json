@@ -1556,7 +1556,7 @@
     "acr": "VKM",
     "active": true,
     "catalogue": [
-      "https://www.vkm.ru/strains.php?vkm={pre}-{id}"
+      "https://www.vkm.ru/strains.php?vkm={id}"
     ],
     "code": "VKM",
     "country": "RU",
