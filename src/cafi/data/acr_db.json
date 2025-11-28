@@ -386,7 +386,7 @@
     ],
     "code": "BACA",
     "country": "PT",
-    "homepage": "https:/baca.uac.pt",
+    "homepage": "https://baca.uac.pt",
     "name": "Bank of Algae and Cyanobacteria of the Azores",
     "regex_ccno": "^BACA\\s*\\d+$",
     "regex_id": {
@@ -2152,7 +2152,6 @@
     "code": "KMM",
     "country": "RU",
     "gbif": "0671c014-5a82-4b45-94b8-d941820d5d98",
-    "homepage": "https://piboc.dvo.ru/en/structure/biosintez/kmm.php",
     "name": "Collection of Marine Microorganisms",
     "regex_ccno": "^KMM\\s*\\d+$",
     "regex_id": {
