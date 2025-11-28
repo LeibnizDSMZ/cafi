@@ -1,6 +1,6 @@
 # Collection acronyms for identification - cafi
 
-[![release: 0.9.11](https://img.shields.io/badge/rel-0.9.11-blue.svg?style=flat-square)](https://github.com/LeibnizDSMZ/cafi)
+[![release: 0.9.12](https://img.shields.io/badge/rel-0.9.12-blue.svg?style=flat-square)](https://github.com/LeibnizDSMZ/cafi)
 [![MIT LICENSE](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](https://choosealicense.com/licenses/mit/)
 [![DATA LICENSE - CC BY 4.0](https://img.shields.io/badge/Data%20License-CC%20BY%204.0-brightgreen.svg?style=flat-square)](http://creativecommons.org/licenses/by/4.0/)
 [![Documentation Status](https://img.shields.io/badge/docs-GitHub-blue.svg?style=flat-square)](https://LeibnizDSMZ.github.io/cafi/)
