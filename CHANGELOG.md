@@ -1,3 +1,9 @@
+## v0.9.12 (2025-11-28)
+
+### Refactor
+
+- **data**: clean up stale catalogue links and regex entries
+
 ## v0.9.11 (2025-11-28)
 
 ### Fix
