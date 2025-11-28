@@ -1,3 +1,10 @@
+## v0.9.9 (2025-11-28)
+
+### Refactor
+
+- **acr_db**: update homepage urls
+- **acr_db**: update catalogue urls
+
 ## v0.9.8 (2025-11-26)
 
 ### Refactor
