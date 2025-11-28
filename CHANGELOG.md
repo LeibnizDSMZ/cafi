@@ -1,3 +1,9 @@
+## v0.9.11 (2025-11-28)
+
+### Fix
+
+- **data**: correct catalogue url for VKM strains
+
 ## v0.9.10 (2025-11-28)
 
 ### Fix
