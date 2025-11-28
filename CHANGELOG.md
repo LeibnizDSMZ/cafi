@@ -1,3 +1,9 @@
+## v0.9.10 (2025-11-28)
+
+### Fix
+
+- **catalogue_db**: correct id for key 46
+
 ## v0.9.9 (2025-11-28)
 
 ### Refactor
