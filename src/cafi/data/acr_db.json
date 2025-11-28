@@ -796,7 +796,7 @@
     "acr": "BCRC",
     "active": true,
     "catalogue": [
-      "https://catalog.bcrc.firdi.org.tw/BcrcContent?bid={id}"
+      "http://catalog.bcrc.firdi.org.tw/BcrcContent?bid={id}"
     ],
     "code": "BCRC",
     "country": "TW",
@@ -1098,7 +1098,7 @@
     "acr": "UTEX",
     "active": true,
     "catalogue": [
-      "https://utex.org/products/{acr}-{pre}<->{core}"
+      "https://utex.org/products/{acr}-{pre}<->{core0:4}"
     ],
     "code": "UTEX",
     "country": "US",
@@ -1280,7 +1280,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://ncma.bigelow.org/search?keywords={acr}{id}"
+      "https://ncma.bigelow.org/{acr}{id}"
     ],
     "code": "CCMP",
     "country": "US",
@@ -2214,7 +2214,7 @@
     ],
     "active": true,
     "catalogue": [
-      "https://ecgrc.net/?s={id}"
+      "https://ecgrc.net/CGSC/Strain.php?ID={id}"
     ],
     "code": "CGSC",
     "country": "US",
