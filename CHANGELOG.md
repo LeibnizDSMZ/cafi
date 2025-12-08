@@ -33,13 +33,13 @@
 
 ### Refactor
 
-- update catlogue links
+- update catalogue links
 
 ## v0.9.7 (2025-11-23)
 
 ### Refactor
 
-- move to http for mtccindia
+- move to http for mtcc india
 
 ## v0.9.6 (2025-11-22)
 
