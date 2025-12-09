@@ -6,7 +6,6 @@ from urllib.parse import quote
 
 from cafi.constants.types import ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T
 from cafi.container.acr_db import AcrDbEntry, CatArgs
-from cafi.container.fun.format import url_to_str
 from cafi.errors.custom_exceptions import ValJsonEx
 from pydantic import HttpUrl
 
@@ -100,6 +99,16 @@ def _get_domain(url: str, /) -> str:
     return domain.group(1)
 
 
+def _unquote_http_url(href: HttpUrl, /) -> str:
+    return (
+        str(href)
+        .replace("%7B", "{")
+        .replace("%7D", "}")
+        .replace("%3C", "<")
+        .replace("%3E", ">")
+    )
+
+
 def _check_uri_template(uri: str, /) -> None:
     sub_parts = defaultdict(list)
     for param in _VALID_URI.findall(uri):
@@ -120,8 +129,8 @@ def _check_uri_template(uri: str, /) -> None:
 def check_uri_template(uris: list[HttpUrl], /) -> None:
     domains = set()
     for uri in uris:
-        _check_uri_template(url_to_str(uri))
-        domains.add(_get_domain(url_to_str(uri)))
+        _check_uri_template(_unquote_http_url(uri))
+        domains.add(_get_domain(str(uri)))
     if len(domains) > 1:
         raise ValJsonEx(f"multiple catalogue domains detected [{uris!s}]")
 
@@ -205,11 +214,12 @@ def _fix_opt(href: str, match: tuple[str, str], args: CatArgs, /) -> str:
     )
 
 
-def replace_param_value(href: str, args: CatArgs, /) -> str:
-    for opt in _OPT_VAL.findall(href):
-        href = _fix_opt(href, opt, args)
+def replace_param_value(href: HttpUrl, args: CatArgs, /) -> str:
+    href_str = _unquote_http_url(href)
+    for opt in _OPT_VAL.findall(href_str):
+        href_str = _fix_opt(href_str, opt, args)
     for che, repl in _REPL_PARAM.items():
-        for mat in che.finditer(href):
+        for mat in che.finditer(href_str):
             for to_repl, repl_val in repl(mat.group(0), args).items():
-                href = href.replace(to_repl, quote(repl_val, safe=""))
-    return href
+                href_str = href_str.replace(to_repl, quote(repl_val, safe=""))
+    return str(HttpUrl(url=href_str))

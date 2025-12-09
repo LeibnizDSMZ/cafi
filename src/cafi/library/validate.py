@@ -13,7 +13,6 @@ from cafi.container.acr_db import (
     ACR_DB_KEYS,
 )
 from cafi.container.fun.acr_db import check_uri_template, create_acr_db, create_ccno_db
-from cafi.container.fun.format import url_to_str
 from cafi.errors.custom_exceptions import ValJsonEx
 
 
@@ -50,7 +49,7 @@ def _check_unique_gid(
 
 
 def _check_active(cur_acr_con: AcrDbEntry, /) -> None:
-    if not cur_acr_con.active and url_to_str(cur_acr_con.homepage) != "":
+    if not cur_acr_con.active and cur_acr_con.homepage is not None:
         raise ValJsonEx(
             f"{cur_acr_con.acr}: 'inactive' BRC can not have a 'homepage' link"
         )
