@@ -76,5 +76,5 @@ class TestCcnoLink:
         cat_id, cat_args = ccno_lmg_1_1
         acr_db = parse_acr_db(json.loads(load_fix_acr_db)).get(cat_id, None)
         assert acr_db is not None
-        cat = "https://bccm.belspo.be/page/lmg-catalogue-display/fields/name/LMG 1t1"
+        cat = "https://bccm.belspo.be/page/lmg-catalogue-display/fields/name/LMG%201t1"
         assert cat in set(create_catalogue_link(acr_db, cat_args))
