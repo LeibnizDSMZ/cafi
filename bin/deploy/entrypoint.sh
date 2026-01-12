@@ -1,3 +1,3 @@
 #!/bin/bash
 
-acr_db
+sleep infinity
