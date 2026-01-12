@@ -1,3 +1,9 @@
+## v0.9.15 (2026-01-12)
+
+### Refactor
+
+- update project dependencies
+
 ## v0.9.14 (2025-12-09)
 
 ### Refactor
