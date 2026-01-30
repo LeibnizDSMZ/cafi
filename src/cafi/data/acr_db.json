@@ -639,6 +639,22 @@
     },
     "ror": "02y5sbr94"
   },
+  "130": {
+    "acr": "MIRRI",
+    "active": true,
+    "catalogue": [
+      "https://catalog.mirri.org/page/Strains_display/{id}"
+    ],
+    "code": "MIRRI-ERIC",
+    "country": "PT",
+    "homepage": "https://www.mirri-eric.eu/",
+    "name": "Microbial Resource Research Infrastructure \u2014 European Research Infrastructure Consortium (MIRRI-ERIC)",
+    "regex_ccno": "^MIRRI\\d+$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "\\d+"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
