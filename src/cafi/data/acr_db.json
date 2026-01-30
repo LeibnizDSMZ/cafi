@@ -974,7 +974,7 @@
     "regex_id": {
       "core": "\\d+",
       "full": "^\\d+(\\s*[AaBbCEQDFG]{1,2})?$",
-      "suf": "[AaBbCEQDFG]{1,2}"
+      "suf": "[AaBbCEQDFG!#]{1,2}"
     },
     "ror": "01tm6cn81"
   },
