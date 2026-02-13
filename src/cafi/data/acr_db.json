@@ -1494,9 +1494,11 @@
     "gbif": "1370bc72-540f-4ff0-aefd-2358971299be",
     "homepage": "https://wi.knaw.nl/",
     "name": "Westerdijk Institute: CBS Collection of yeasts, filamentous fungi and bacteria",
-    "regex_ccno": "^CBS\\s*\\d+(\\.\\d+)?$",
+    "regex_ccno": "^CBS\\s*\\d+(\\.\\d+)?[A-Z]?$",
     "regex_id": {
-      "full": "^\\d+(\\.\\d+)?$"
+      "core": "\\d+(\\.\\d+)?",
+      "full": "^\\d+(\\.\\d+)?[A-Z]?$",
+      "suf": "[A-Z]"
     },
     "ror": "030a5r161"
   },
