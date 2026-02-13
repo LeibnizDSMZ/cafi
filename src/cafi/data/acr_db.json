@@ -486,10 +486,10 @@
     "country": "ES",
     "homepage": "https://marinebiotechnology.org/en/beaen/about-us.html",
     "name": "Spanish Bank of Algae",
-    "regex_ccno": "^BEA\\s*\\d+B?$",
+    "regex_ccno": "^BEA\\s*\\d+(/\\d+)?B?$",
     "regex_id": {
-      "core": "\\d+",
-      "full": "^\\d+B?$",
+      "core": "\\d+(/\\d+)?",
+      "full": "^\\d+(/\\d+)?B?$",
       "suf": "B"
     },
     "ror": "01teme464"
