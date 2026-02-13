@@ -655,6 +655,24 @@
       "full": "\\d+"
     }
   },
+  "131": {
+    "acr": "ITEM",
+    "acr_synonym": [
+      "ISPA:ITEM",
+      "CNR:ISPA:ITEM"
+    ],
+    "active": true,
+    "code": "CNR:ISPA:ITEM",
+    "country": "IT",
+    "gbif": "21c9b326-b756-4391-b302-f3e095b947cb",
+    "homepage": "https://item.bio-aware.com/",
+    "name": "ITEM Agri-Food Microbial Collection",
+    "regex_ccno": "^ITEM\\d+$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "\\d+"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
