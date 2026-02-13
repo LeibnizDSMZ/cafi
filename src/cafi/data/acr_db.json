@@ -666,7 +666,7 @@
     "gbif": "21c9b326-b756-4391-b302-f3e095b947cb",
     "homepage": "https://item.bio-aware.com/",
     "name": "ITEM Agri-Food Microbial Collection",
-    "regex_ccno": "^ITEM\\d+$",
+    "regex_ccno": "^ITEM\\s*\\d+$",
     "regex_id": {
       "full": "\\d+"
     }
@@ -679,7 +679,23 @@
     "gbif": "1a74161f-2a7b-4f40-8e4a-c7d2db88ae2c",
     "homepage": "http://m-biotech.biol.uoa.gr/ATHUBstrains.html",
     "name": "The Athens University Bacterial & Archaea Culture Collection",
-    "regex_ccno": "^ITEM\\d+$",
+    "regex_ccno": "^ATHUBA\\s*\\d+$",
+    "regex_id": {
+      "full": "\\d+"
+    }
+  },
+  "133": {
+    "acr": "ACOI",
+    "active": true,
+    "catalogue": [
+      "http://acoi.ci.uc.pt/spec_detail.php?cult_id={id}"
+    ],
+    "code": "ACOI",
+    "country": "PT",
+    "gbif": "e3fba94d-bd32-4a35-9385-a97263f618b1",
+    "homepage": "http://acoi.ci.uc.pt/index.php",
+    "name": "ACOI Coimbra Collection of Algae",
+    "regex_ccno": "^ACOI\\s*(-\\s*)\\d+$",
     "regex_id": {
       "full": "\\d+"
     }
