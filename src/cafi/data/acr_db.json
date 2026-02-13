@@ -749,6 +749,18 @@
       "full": "^\\d+$"
     }
   },
+  "137": {
+    "acr": "UMCC",
+    "active": true,
+    "code": "UMCC",
+    "country": "IT",
+    "homepage": "https://umcc.bio-aware.com/page/Homepage",
+    "name": "UNIMORE Microbial Culture Collection (UMCC)",
+    "regex_ccno": "^UMCC\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
