@@ -716,6 +716,21 @@
       "suf": "(A|B|C|a|b)"
     }
   },
+  "135": {
+    "acr": "UCCCB",
+    "active": true,
+    "catalogue": [
+      "https://ucccb.uc.pt/strain-details/?detail={acr}{id}"
+    ],
+    "code": "UCCCB",
+    "country": "PT",
+    "homepage": "https://ucccb.uc.pt/",
+    "name": "UCCCB The University of Coimbra Bacteria Culture Collection",
+    "regex_ccno": "^UCCCB\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
