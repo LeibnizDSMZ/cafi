@@ -731,6 +731,24 @@
       "full": "^\\d+$"
     }
   },
+  "136": {
+    "acr": "PYCC",
+    "acr_synonym": [
+      "NOVA:PYCC"
+    ],
+    "active": true,
+    "catalogue": [
+      "https://pycc.pt/pycc-{id}"
+    ],
+    "code": "PYCC",
+    "country": "PT",
+    "homepage": "https://pycc.pt/",
+    "name": "PYCC The portuguese yeast culture collection",
+    "regex_ccno": "^PYCC\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
