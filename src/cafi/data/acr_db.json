@@ -1714,9 +1714,11 @@
     "gbif": "dfdd9fce-e4b9-4444-a86b-bb68b2b2ef48",
     "homepage": "https://www.micoteca.deb.uminho.pt",
     "name": "Micoteca da Universidade do Minho",
-    "regex_ccno": "^MUM\\s*\\d+(\\.\\d+)?$",
+    "regex_ccno": "^MUM\\s*\\d+(\\.\\d+)?i?$",
     "regex_id": {
-      "full": "^\\d+(\\.\\d+)?$"
+      "core": "\\d+(\\.\\d+)?",
+      "full": "^\\d+(\\.\\d+)?i?$",
+      "suf": "i"
     }
   },
   "67": {
