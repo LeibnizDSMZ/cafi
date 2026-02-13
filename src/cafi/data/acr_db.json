@@ -366,10 +366,10 @@
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
     "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
-    "regex_ccno": "^LEGE\\s*(XX?-?)?\\d+M?$",
+    "regex_ccno": "^LEGE\\s*(XX?-?)?\\d+(.\\d+)?M?$",
     "regex_id": {
-      "core": "\\d+",
-      "full": "^(XX?-?)?\\d+M?$",
+      "core": "\\d+(.\\d+)?",
+      "full": "^(XX?-?)?\\d+(.\\d+)?M?$",
       "pre": "XX?",
       "suf": "M"
     },
@@ -651,7 +651,6 @@
     "name": "Microbial Resource Research Infrastructure \u2014 European Research Infrastructure Consortium (MIRRI-ERIC)",
     "regex_ccno": "^MIRRI\\d+$",
     "regex_id": {
-      "core": "\\d+",
       "full": "\\d+"
     }
   },
@@ -669,7 +668,6 @@
     "name": "ITEM Agri-Food Microbial Collection",
     "regex_ccno": "^ITEM\\d+$",
     "regex_id": {
-      "core": "\\d+",
       "full": "\\d+"
     }
   },
@@ -683,7 +681,6 @@
     "name": "The Athens University Bacterial & Archaea Culture Collection",
     "regex_ccno": "^ITEM\\d+$",
     "regex_id": {
-      "core": "\\d+",
       "full": "\\d+"
     }
   },
