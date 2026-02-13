@@ -673,6 +673,20 @@
       "full": "\\d+"
     }
   },
+  "132": {
+    "acr": "ATHUBA",
+    "active": true,
+    "code": "ATHUBA",
+    "country": "GR",
+    "gbif": "1a74161f-2a7b-4f40-8e4a-c7d2db88ae2c",
+    "homepage": "http://m-biotech.biol.uoa.gr/ATHUBstrains.html",
+    "name": "The Athens University Bacterial & Archaea Culture Collection",
+    "regex_ccno": "^ITEM\\d+$",
+    "regex_id": {
+      "core": "\\d+",
+      "full": "\\d+"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
