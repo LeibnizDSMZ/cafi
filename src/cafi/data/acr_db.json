@@ -761,6 +761,19 @@
       "full": "^\\d+$"
     }
   },
+  "138": {
+    "acr": "MSCL",
+    "active": true,
+    "code": "MSCL",
+    "country": "LV",
+    "gbif": "26bed235-564f-4c34-a971-dafcc7371b2a",
+    "homepage": "https://www.lu.lv/en/mbi/laboratories/microbial-strain-collection-of-latvia",
+    "name": "MSCL Microbial Strain Collection of Latvia",
+    "regex_ccno": "^MSCL\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
