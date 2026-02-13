@@ -774,6 +774,22 @@
       "full": "^\\d+$"
     }
   },
+  "139": {
+    "acr": "ICCF",
+    "acr_synonym": [
+      "CMII:ICCF",
+      "CMII:ICCF:WFCC"
+    ],
+    "active": false,
+    "code": "ICCF",
+    "country": "RO",
+    "gbif": "12693a23-a500-41c8-a7c6-61403ea24900",
+    "name": "ICCF Collection of Industrial Microorganisms",
+    "regex_ccno": "^ICCF\\s*\\d+$",
+    "regex_id": {
+      "full": "^\\d+$"
+    }
+  },
   "14": {
     "acr": "JCM",
     "active": true,
