@@ -682,8 +682,9 @@
     "name": "ACOI Coimbra Collection of Algae",
     "regex_ccno": "^ACOI\\s*(-\\s*)?\\d+(-(A|B))?$",
     "regex_id": {
+      "core": "\\d+",
       "full": "^\\d+(-(A|B))?$",
-      "suf": "-(A|B)"
+      "suf": "(A|B)"
     }
   },
   "133": {
@@ -694,10 +695,10 @@
     "gbif": "e9e55bd6-98d7-41a7-a250-da49ded6dc94",
     "homepage": "http://www.med.uoa.gr/~aveleg/index_files/Page596.htm",
     "name": "UOA/HCPF Hellenic Collection of Pathogenic Fungi",
-    "regex_ccno": "^UOA/HCPF\\s*(REF|ENV|AM)?\\s*\\d+([.-]\\d+)?\\s*(A|B|C|a|b)?$",
+    "regex_ccno": "^UOA/HCPF\\s*(REF|ENV|AM)?\\s*\\d+([.-]\\d+)*[\\s-]*(A|B|C|a|b)?$",
     "regex_id": {
-      "core": "\\d+([.-]\\d+)?",
-      "full": "^(REF|ENV|AM)?\\s*\\d+([.-]\\d+)?\\s*(A|B|C|a|b)?$",
+      "core": "\\d+([.-]\\d+)*",
+      "full": "^(REF|ENV|AM)?\\s*\\d+([.-]\\d+)*[\\s-]*(A|B|C|a|b)?$",
       "pre": "(REF|ENV|AM)",
       "suf": "(A|B|C|a|b)"
     }
