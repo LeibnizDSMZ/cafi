@@ -1,3 +1,39 @@
+## v0.10.0 (2026-03-12)
+
+### Feat
+
+- **acr_db.json,regex_db.json**: complete list of CBS ccno examples for all found suffixes
+- **acr_db.json,regex_db.json**: add entry for ICCF Collection of Industrial Microorganisms
+- **acr_db.json,regex_db.json**: add entry for MSCL Microbial Strain Collection of Latvia
+- **acr_db.json,regex_db.json**: add entry for UNIMORE Microbial Culture Collection (UMCC)
+- **acr_db.json,regex_db.json**: add entry for PYCC The portuguese yeast culture collection
+- **acr_db.json,regex_db.json**: add entry for UCCCB The University of Coimbra Bacteria Culture Collection
+- **acr_db.json,regex_db.json**: add entry for UOA/HCPF Hellenic Collection of Pathogenic Fungi
+- **acr_db.json,regex_db.json**: add entry for ACOI Coimbra Collection of Algae
+- **acr_db.json,regex_db.json**: add entry for The Athens University Bacterial & Archaea Culture Collection ATHUBA
+- **acr_db.json,regex_db.json**: add entry for ITEM Agri-Food Microbial Collection
+- add MIRRI acronym
+
+### Fix
+
+- **acr_db.json**: fixed ACOI suffix regex correctly
+- **acr_db.json**: changed ACOI suffix regex from [] to (|)
+- **acr_db.json,catalogue_db.json,regex_db.json**: fixed mismatching and incomplete regexes for ACOI
+- **acr_db.json**: fix mismatching regexes for CCUG
+- **acr_db.json**: fixed mismatching regexes for UOA/HCPF
+- **acr_db.json,catalogue_db.json,regex_db.json**: fixed some issues with regexes and removed MIRRI acronym
+- **acr_db.json,regex_db.json**: recognize CBS ccnos with capital letter suffix
+- **catalogue_db.json**: add missing ccnos for new entries with catalogue urls
+- **acr_db.json,regex_db.json**: recognize LEGE ccnos with one dot
+- **acr_db.json,regex_db.json**: recognize suffix 'i' for MUM collection
+- **acr_db.json,regex_db.json**: recognize BEA ccnos with one slash
+- **regex_db.json**: add private CCUG ccno examples
+- **acr_db.json**: Extended CCUG regex to accept ! and #
+
+### Refactor
+
+- **validate**: adjust regex patterns and error message
+
 ## v0.9.15 (2026-01-12)
 
 ### Refactor
