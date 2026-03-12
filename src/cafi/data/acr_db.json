@@ -680,10 +680,10 @@
     "gbif": "e3fba94d-bd32-4a35-9385-a97263f618b1",
     "homepage": "http://acoi.ci.uc.pt/index.php",
     "name": "ACOI Coimbra Collection of Algae",
-    "regex_ccno": "^ACOI\\s*(-\\s*)?\\d+(-[AB])?$",
+    "regex_ccno": "^ACOI\\s*(-\\s*)?\\d+(-(A|B))?$",
     "regex_id": {
-      "full": "^\\d+(-[AB])?$",
-      "suf": "[AB]"
+      "full": "^\\d+(-(A|B))?$",
+      "suf": "(A|B)"
     }
   },
   "133": {
