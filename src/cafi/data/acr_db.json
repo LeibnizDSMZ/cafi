@@ -366,10 +366,10 @@
     "country": "PT",
     "homepage": "https://lege.ciimar.up.pt",
     "name": "Blue Biotechnology and Ecotoxicology Culture Collection",
-    "regex_ccno": "^LEGE\\s*(XX?-?)?\\d+(.\\d+)?M?$",
+    "regex_ccno": "^LEGE\\s*(XX?-?)?\\d+(\\.\\d+)?M?$",
     "regex_id": {
-      "core": "\\d+(.\\d+)?",
-      "full": "^(XX?-?)?\\d+(.\\d+)?M?$",
+      "core": "\\d+(\\.\\d+)?",
+      "full": "^(XX?-?)?\\d+(\\.\\d+)?M?$",
       "pre": "XX?",
       "suf": "M"
     },
@@ -640,21 +640,6 @@
     "ror": "02y5sbr94"
   },
   "130": {
-    "acr": "MIRRI",
-    "active": true,
-    "catalogue": [
-      "https://catalog.mirri.org/page/Strains_display/{id}"
-    ],
-    "code": "MIRRI-ERIC",
-    "country": "PT",
-    "homepage": "https://www.mirri-eric.eu/",
-    "name": "Microbial Resource Research Infrastructure \u2014 European Research Infrastructure Consortium (MIRRI-ERIC)",
-    "regex_ccno": "^MIRRI\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    }
-  },
-  "131": {
     "acr": "ITEM",
     "acr_synonym": [
       "ISPA:ITEM",
@@ -671,7 +656,7 @@
       "full": "^\\d+$"
     }
   },
-  "132": {
+  "131": {
     "acr": "ATHUBA",
     "active": true,
     "code": "ATHUBA",
@@ -684,7 +669,7 @@
       "full": "^\\d+$"
     }
   },
-  "133": {
+  "132": {
     "acr": "ACOI",
     "active": true,
     "catalogue": [
@@ -700,7 +685,7 @@
       "full": "^\\d+$"
     }
   },
-  "134": {
+  "133": {
     "acr": "UOA:HCPF",
     "active": true,
     "code": "UOA:HCPF",
@@ -708,15 +693,15 @@
     "gbif": "e9e55bd6-98d7-41a7-a250-da49ded6dc94",
     "homepage": "http://www.med.uoa.gr/~aveleg/index_files/Page596.htm",
     "name": "UOA/HCPF Hellenic Collection of Pathogenic Fungi",
-    "regex_ccno": "^UOA:HCPF\\s*(REF|ENV|AM)\\s*\\d+([.-]\\d+)\\s*(A|B|C|a|b)?$",
+    "regex_ccno": "^UOA/HCPF\\s*(REF|ENV|AM)\\s*\\d+([.-]\\d+)\\s*(A|B|C|a|b)?$",
     "regex_id": {
       "core": "\\d+([.-]\\d+)?",
-      "full": "^(REF|ENV|AM)\\s*\\d+([.-]\\d+)\\s*(A|B|C|a|b)?$",
+      "full": "^(REF|ENV|AM)?\\s*\\d+([.-]\\d+)?\\s*(A|B|C|a|b)?$",
       "pre": "(REF|ENV|AM)",
       "suf": "(A|B|C|a|b)"
     }
   },
-  "135": {
+  "134": {
     "acr": "UCCCB",
     "active": true,
     "catalogue": [
@@ -731,7 +716,7 @@
       "full": "^\\d+$"
     }
   },
-  "136": {
+  "135": {
     "acr": "PYCC",
     "acr_synonym": [
       "NOVA:PYCC"
@@ -749,7 +734,7 @@
       "full": "^\\d+$"
     }
   },
-  "137": {
+  "136": {
     "acr": "UMCC",
     "active": true,
     "code": "UMCC",
@@ -761,7 +746,7 @@
       "full": "^\\d+$"
     }
   },
-  "138": {
+  "137": {
     "acr": "MSCL",
     "active": true,
     "code": "MSCL",
@@ -774,7 +759,7 @@
       "full": "^\\d+$"
     }
   },
-  "139": {
+  "138": {
     "acr": "ICCF",
     "acr_synonym": [
       "CMII:ICCF",
