@@ -1090,10 +1090,10 @@
     "gbif": "323cc3eb-16f5-4aa0-8126-f0ccdfe9b56d",
     "homepage": "https://www.ccug.se/",
     "name": "Culture Collection University of Gothenburg",
-    "regex_ccno": "^CCUG\\s*\\d+(\\s*[AaBbCEQDFG]{1,2})?$",
+    "regex_ccno": "^CCUG\\s*\\d+(\\s*[AaBbCEQDFG!#]{1,2})?$",
     "regex_id": {
       "core": "\\d+",
-      "full": "^\\d+(\\s*[AaBbCEQDFG]{1,2})?$",
+      "full": "^\\d+(\\s*[AaBbCEQDFG!#]{1,2})?$",
       "suf": "[AaBbCEQDFG!#]{1,2}"
     },
     "ror": "01tm6cn81"
