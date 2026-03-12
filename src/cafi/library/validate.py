@@ -160,7 +160,9 @@ def _check_regex(r_ccno: str, r_id: AcrCoreReg, bid: int, /) -> None:
     pre, *_, suf = pre_suf.groups()
     for typ, fps, rps in [("prefix", pre, r_id.pre), ("suffix", suf, r_id.suf)]:
         if not isinstance(fps, str) or rps not in fps or (rps == "" and fps != ""):
-            raise ValJsonEx(f"{typ} defines a different {rps} regex than the full id")
+            raise ValJsonEx(
+                f"{typ} defines a different {rps} regex than the full id {fps}!"
+            )
     _check_or_order(r_id.suf, bid)
     _check_or_order(r_id.pre, bid)
 
