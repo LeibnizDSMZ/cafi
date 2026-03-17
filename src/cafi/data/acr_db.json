@@ -743,9 +743,11 @@
     "country": "IT",
     "homepage": "https://umcc.bio-aware.com/page/Homepage",
     "name": "UNIMORE Microbial Culture Collection (UMCC)",
-    "regex_ccno": "^UMCC\\s*\\d+$",
+    "regex_ccno": "^UMCC\\s*\\d+(.\\d+)?\\s*(A|B|C|D)?$",
     "regex_id": {
-      "full": "^\\d+$"
+      "core": "\\d+(.\\d+)?",
+      "full": "^\\d+(.\\d+)?\\s*(A|B|C|D)?$",
+      "suf": "(A|B|C|D)"
     }
   },
   "137": {
