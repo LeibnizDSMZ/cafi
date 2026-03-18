@@ -695,12 +695,12 @@
     "gbif": "e9e55bd6-98d7-41a7-a250-da49ded6dc94",
     "homepage": "http://www.med.uoa.gr/~aveleg/index_files/Page596.htm",
     "name": "UOA/HCPF Hellenic Collection of Pathogenic Fungi",
-    "regex_ccno": "^UOA/HCPF\\s*(REF|ENV|env|AM|AB|BL|GS|EM|BUL)?\\s*\\d+([.-]\\d+)*[\\s-]*((AB|Bl|CL|CR|ENV|PEM|dMYT|\u0391|\u0392|\\w)([ -.]?\\d+)*)?$",
+    "regex_ccno": "^UOA/HCPF\\s*(REF|ENV|env|AM|AB|BL|GS|EM|BUL)?\\s*\\d+(\\D\\d+)*[\\s-]*(AB|Bl|CL|CR|ENV|PEM|dMYT|\u0391|\u0392|[A-Za-z])?$",
     "regex_id": {
-      "core": "\\d+([.-]\\d+)*",
-      "full": "^(REF|ENV|env|AM|AB|BL|GS|EM|BUL)?\\s*\\d+([.-]\\d+)*[\\s-]*((AB|Bl|CL|CR|ENV|PEM|dMYT|\u0391|\u0392|\\w)([ -.]?\\d+)*)?$",
+      "core": "\\d+(\\D\\d+)*",
+      "full": "^(REF|ENV|env|AM|AB|BL|GS|EM|BUL)?\\s*\\d+(\\D\\d+)*[\\s-]*(AB|Bl|CL|CR|ENV|PEM|dMYT|\u0391|\u0392|[A-Za-z])?$",
       "pre": "(REF|ENV|env|AM|AB|BL|GS|EM|BUL)",
-      "suf": "((AB|Bl|CL|CR|ENV|PEM|dMYT|\u0391|\u0392|\\w)([ -.]?\\d+)*)"
+      "suf": "(AB|Bl|CL|CR|ENV|PEM|dMYT|\u0391|\u0392|[A-Za-z])"
     }
   },
   "134": {
