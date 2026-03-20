@@ -1,3 +1,15 @@
+## v0.11.0 (2026-03-20)
+
+### Feat
+
+- **validate**: add checks for prefix and suffix regex constraints
+
+### Fix
+
+- **acr_db.json,-regex_db.json**: restrict regexes for UOA/HCPF more, reduce size of regex_db
+- **acr_db.json,-regex_db.json**: expand regexes for UMCC, UOA/HCPF and PYCC to recognize more correct ccnos
+- **acr_db.json,-regex_db.json**: fix missing dots and suffixes for UMCC
+
 ## v0.10.0 (2026-03-12)
 
 ### Feat
