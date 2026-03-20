@@ -188,7 +188,7 @@ ignore = [
 select = ["E", "F", "B", "C90", "S", "PT", "ARG", "PTH", "TRY", "RUF", "N", "D"]
 unfixable = []
 
-[tool.ruff.per-file-ignores]
+[tool.ruff.lint.per-file-ignores]
 "tests/**/*.py" = ["S101"]
 
 [tool.ruff.lint.mccabe]

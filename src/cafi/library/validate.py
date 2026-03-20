@@ -1,4 +1,4 @@
-from typing import Any, Callable, Final
+from typing import Any, Callable, Final, Iterable
 import re
 
 from pydantic import ValidationError
@@ -14,7 +14,7 @@ from cafi.container.acr_db import (
 )
 from cafi.container.fun.acr_db import check_uri_template, create_acr_db, create_ccno_db
 from cafi.errors.custom_exceptions import ValJsonEx
-
+import string
 
 _ACR: Final[re.Pattern[str]] = re.compile(r"^[A-Z:]+$")
 _NON_WORD: Final[re.Pattern[str]] = re.compile(r"[^A-Za-z]+")
@@ -24,6 +24,75 @@ _CL_REGEX: Final[re.Pattern[str]] = re.compile(r"[()\][]")
 
 type _UNIQUE_GEN = tuple[str, str, str, str]
 type _UNIQUE_GID = tuple[str, str, str]
+
+_CAT_DIGIT = '\\d'
+_CAT_NOT_DIGIT = '\\D'
+_CAT_WORD = '\\w'
+_CAT_NOT_WORD = '\\W'
+_CAT_SPACE = '\\s'
+_CAT_NOT_SPACE = '\\S'
+
+
+def _esc(input: str) -> Iterable[str]:
+    for char in input:
+        new_char = re.sub(r'.*\\([nrtb]).*', r'\\\1', repr(char))
+        if new_char != repr(char):
+            char = new_char
+        yield char
+
+
+_NON_ALPHA_CHARS = set(string.digits) | set(_esc(string.punctuation)) \
+    | set(_esc(string.whitespace))
+
+_WORDS_ONLY_BAN: Final[set[str]] = {
+    _CAT_DIGIT, _CAT_NOT_DIGIT, _CAT_WORD,
+    _CAT_NOT_WORD, _CAT_SPACE, _CAT_NOT_SPACE
+} | _NON_ALPHA_CHARS
+
+_NO_DIGITS_BAN: Final[set[str]] = {
+    _CAT_DIGIT, _CAT_WORD
+} | set(string.digits)
+
+def _check_prefix_suffix_constraints(
+        pre_suf: str,
+        constraints: set[str],
+        bid: int,
+        err_msg: str,
+        /
+) -> None:
+        # TODO very simple approach, possibly not enough
+        try:
+            pattern_string = re.compile(pre_suf).pattern
+        except re.error as exe:
+            raise ValJsonEx(
+                f"prefix or suffix regex '{pre_suf}' "
+                + f"in collection {bid} is invalid: {exe}"
+            ) from exe
+        elements = set()
+        buffer = re.sub(r'(\\\\)+', '', pattern_string)
+        if buffer != pattern_string:
+            elements.add('\\')
+            pattern_string = buffer
+        pattern_string = re.sub(r'\{[0-9,]*\}(?![^\[]*\])', '', pattern_string)
+        pattern_string = re.sub(r'(?<!\\)[*+?](?![^\[]*\])', '', pattern_string)
+        elements.update(re.findall(r'\\[A-Za-z]', pattern_string))
+        pattern_string = re.sub(r'\\[A-Za-z]', '', pattern_string)
+        elements.update(re.findall(r'\\(.)', pattern_string))
+        pattern_string = re.sub(r'\\.', '', pattern_string)
+
+        while True:
+            new_pattern_string = re.sub(
+                r'(?<=\[)[^]-]*([A-Za-z0-9])-(?=[A-Za-z0-9])', r'\1', pattern_string
+            )
+            if new_pattern_string == pattern_string:
+                break
+            pattern_string = new_pattern_string
+
+        pattern_string = re.sub(r'[\[\]()|]', '', pattern_string)
+        elements.update(pattern_string)
+
+        if elements & constraints:
+            raise ValJsonEx(err_msg)
 
 
 def _check_unique_gen(unique: set[_UNIQUE_GEN], acr_db: AcrDbEntry, /) -> _UNIQUE_GEN:
@@ -163,6 +232,14 @@ def _check_regex(r_ccno: str, r_id: AcrCoreReg, bid: int, /) -> None:
             raise ValJsonEx(
                 f"{typ} defines a different {rps} regex than the full id {fps}!"
             )
+    _check_prefix_suffix_constraints(r_id.pre, _WORDS_ONLY_BAN, bid,
+        f"Prefix regex '{r_id.pre}' in collection {bid} must only match "
+        + "letters [A-Za-z], not digits or special characters"
+    )
+    _check_prefix_suffix_constraints(r_id.suf, _NO_DIGITS_BAN, bid,
+        f"Suffix regex '{r_id.suf}' in collection {bid} must not match "
+        + "any digits (0-9)"
+    )
     _check_or_order(r_id.suf, bid)
     _check_or_order(r_id.pre, bid)
 
