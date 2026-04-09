@@ -24,9 +24,9 @@ def _load_data_from_file(db_name: str, /) -> bytes:
         return fhd.read()
 
 
-def _load_data[
-    T: (ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T)
-](version: str, db_name: str, create: Callable[[Any], T], /) -> T:
+def _load_data[T: (ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T)](
+    version: str, db_name: str, create: Callable[[Any], T], /
+) -> T:
     cafi = "https://raw.githubusercontent.com/LeibnizDSMZ/cafi"
     req = f"{cafi}/{version}/src/cafi/data/{db_name}.json"
     if version == CURRENT_VER:
@@ -40,9 +40,9 @@ def _load_data[
         raise ReqURIEx(f"Could not get {req}")
 
 
-def _catch_expected_err[
-    **P, T: (ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T)
-](loader: Callable[P, T]) -> Callable[P, T]:
+def _catch_expected_err[**P, T: (ACR_DB_T, ACR_MIN_DB_T, CCNO_DB_T)](
+    loader: Callable[P, T],
+) -> Callable[P, T]:
     def load_f(*args: P.args, **kwargs: P.kwargs) -> T:
         version = CURRENT_VER
         if len(args) > 0 and isinstance(args, Iterable):
