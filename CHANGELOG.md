@@ -1,3 +1,9 @@
+## v0.11.1 (2026-04-09)
+
+### Refactor
+
+- update dependencies and format code
+
 ## v0.11.0 (2026-03-20)
 
 ### Feat
