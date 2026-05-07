@@ -782,7 +782,7 @@
     }
   },
   "139": {
-    "acr": "JA",
+    "acr": "ZIMET",
     "acr_changed_to": [
       {
         "id": 140,
@@ -790,18 +790,16 @@
       }
     ],
     "acr_synonym": [
-      "HKI:JA",
-      "IMET:JA"
+      "HKI:ZIMET",
+      "ZIMET:ZIMET"
     ],
     "active": false,
-    "code": "JA",
+    "code": "ZIMET",
     "country": "DE",
-    "name": "Jena-Pharm Jenaer Actinomycetes",
-    "regex_ccno": "^JA\\s*\\d+(/\\d)?[Aa]?$",
+    "name": "Zentralinstitut f\u00fcr Mikrobiologie und experimentelle Therapie",
+    "regex_ccno": "^ZIMET\\s*\\d+$",
     "regex_id": {
-      "core": "\\d+(/\\d)?",
-      "full": "^\\d+(/\\d)?[Aa]?$",
-      "suf": "[Aa]"
+      "full": "^\\d+$"
     }
   },
   "14": {
@@ -822,129 +820,6 @@
     "ror": "00s05em53"
   },
   "140": {
-    "acr": "IMET",
-    "acr_changed_to": [
-      {
-        "id": 147,
-        "type": "transfer"
-      }
-    ],
-    "acr_synonym": [
-      "ZIMET:IMET",
-      "HKI:IMET"
-    ],
-    "active": false,
-    "code": "IMET",
-    "country": "DE",
-    "name": "Culture Collection of microorganisms at the Institut f\u00fcr Mikrobiologie und experimentelle Therapie, Jena, IMET",
-    "regex_ccno": "^IMET\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    }
-  },
-  "141": {
-    "acr": "ZIMET",
-    "acr_changed_to": [
-      {
-        "id": 145,
-        "type": "transfer"
-      }
-    ],
-    "acr_synonym": [
-      "HKI:ZIMET",
-      "ZIMET:ZIMET"
-    ],
-    "active": false,
-    "code": "ZIMET",
-    "country": "DE",
-    "name": "Zentralinstitut f\u00fcr Mikrobiologie und experimentelle Therapie",
-    "regex_ccno": "^ZIMET\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    }
-  },
-  "142": {
-    "acr": "BI",
-    "acr_changed_to": [
-      {
-        "id": 145,
-        "type": "transfer"
-      },
-      {
-        "id": 147,
-        "type": "transfer"
-      }
-    ],
-    "acr_synonym": [
-      "HKI:BI"
-    ],
-    "active": false,
-    "code": "HKI:BI",
-    "country": "DE",
-    "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute, cooperation with Boehringer Ingelheim",
-    "regex_ccno": "^BI\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    }
-  },
-  "143": {
-    "acr": "AM",
-    "acr_changed_to": [
-      {
-        "id": 145,
-        "type": "transfer"
-      },
-      {
-        "id": 147,
-        "type": "transfer"
-      },
-      {
-        "id": 148,
-        "type": "transfer"
-      }
-    ],
-    "acr_synonym": [
-      "ZIMET:AM",
-      "HKI:AM"
-    ],
-    "active": false,
-    "code": "ZIMET:AM",
-    "country": "DE",
-    "name": "Culture collection of Dept. Antibiotika-Mikrobiologie of the ZIMET",
-    "regex_ccno": "^AM\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    }
-  },
-  "144": {
-    "acr": "GT",
-    "acr_changed_to": [
-      {
-        "id": 145,
-        "type": "transfer"
-      },
-      {
-        "id": 147,
-        "type": "transfer"
-      },
-      {
-        "id": 148,
-        "type": "transfer"
-      }
-    ],
-    "acr_synonym": [
-      "HKI:GT"
-    ],
-    "active": false,
-    "code": "HKI:GT",
-    "country": "DE",
-    "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute, strains of the Dept. Screening Center and Moleculare Naturstoff-Forschung (MNF)",
-    "regex_ccno": "^GT\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    }
-  },
-  "145": {
     "acr": "ST",
     "acr_synonym": [
       "HKI:ST"
@@ -960,7 +835,7 @@
     },
     "ror": "055s37c97"
   },
-  "146": {
+  "141": {
     "acr": "SF",
     "acr_synonym": [
       "HKI:SF"
@@ -976,7 +851,7 @@
     },
     "ror": "055s37c97"
   },
-  "147": {
+  "142": {
     "acr": "STI",
     "acr_synonym": [
       "HKI:STI"
@@ -992,7 +867,7 @@
     },
     "ror": "055s37c97"
   },
-  "148": {
+  "143": {
     "acr": "STH",
     "acr_synonym": [
       "HKI:STH"
@@ -1003,22 +878,6 @@
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^STH\\s*\\d+$",
-    "regex_id": {
-      "full": "^\\d+$"
-    },
-    "ror": "055s37c97"
-  },
-  "149": {
-    "acr": "STN",
-    "acr_synonym": [
-      "HKI:STN"
-    ],
-    "active": true,
-    "code": "HKI:STN",
-    "country": "DE",
-    "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
-    "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute: strains from the National Reference Center (NRZ)",
-    "regex_ccno": "^STN\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
     },
@@ -1855,7 +1714,15 @@
       {
         "id": 1,
         "type": "transfer"
+      },
+      {
+        "id": 142,
+        "type": "transfer"
       }
+    ],
+    "acr_synonym": [
+      "ZIMET:IMET",
+      "HKI:IMET"
     ],
     "active": false,
     "code": "IMET",
@@ -2415,11 +2282,11 @@
     "acr": "HKI",
     "acr_changed_to": [
       {
-        "id": 145,
+        "id": 140,
         "type": "transfer"
       },
       {
-        "id": 148,
+        "id": 143,
         "type": "transfer"
       }
     ],
@@ -2435,25 +2302,11 @@
   },
   "89": {
     "acr": "JMRC",
-    "acr_changed_to": [
-      {
-        "id": 145,
-        "type": "transfer"
-      },
-      {
-        "id": 146,
-        "type": "transfer"
-      },
-      {
-        "id": 148,
-        "type": "transfer"
-      }
-    ],
     "acr_synonym": [
       "JE:JMRC",
       "HKI:JMRC"
     ],
-    "active": false,
+    "active": true,
     "code": "JMRC",
     "country": "DE",
     "gbif": "e195543b-f365-4a9e-ae47-c1bd5cc1f443",
