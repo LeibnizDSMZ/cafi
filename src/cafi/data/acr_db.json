@@ -789,10 +789,6 @@
         "type": "transfer"
       }
     ],
-    "acr_synonym": [
-      "HKI:ZIMET",
-      "ZIMET:ZIMET"
-    ],
     "active": false,
     "code": "ZIMET",
     "country": "DE",
@@ -822,12 +818,14 @@
   "140": {
     "acr": "ST",
     "acr_synonym": [
-      "HKI:ST"
+      "HKI:ST",
+      "JMRC:ST"
     ],
     "active": true,
     "code": "HKI:ST",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^ST\\s*\\d+$",
     "regex_id": {
@@ -838,12 +836,14 @@
   "141": {
     "acr": "SF",
     "acr_synonym": [
-      "HKI:SF"
+      "HKI:SF",
+      "JMRC:SF"
     ],
     "active": true,
     "code": "HKI:SF",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^SF\\s*\\d+$",
     "regex_id": {
@@ -854,12 +854,14 @@
   "142": {
     "acr": "STI",
     "acr_synonym": [
-      "HKI:STI"
+      "HKI:STI",
+      "JMRC:STI"
     ],
     "active": true,
     "code": "HKI:STI",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute: strains from the IMET Catalog",
     "regex_ccno": "^STI\\s*\\d+$",
     "regex_id": {
@@ -870,12 +872,14 @@
   "143": {
     "acr": "STH",
     "acr_synonym": [
-      "HKI:STH"
+      "HKI:STH",
+      "JMRC:STH"
     ],
     "active": true,
     "code": "HKI:STH",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^STH\\s*\\d+$",
     "regex_id": {
@@ -1712,18 +1716,9 @@
     "acr": "IMET",
     "acr_changed_to": [
       {
-        "id": 1,
-        "type": "transfer"
-      },
-      {
         "id": 142,
         "type": "transfer"
       }
-    ],
-    "acr_synonym": [
-      "IMET:IMET",
-      "ZIMET:IMET",
-      "HKI:IMET"
     ],
     "active": false,
     "code": "IMET",
@@ -2303,15 +2298,11 @@
   },
   "89": {
     "acr": "JMRC",
-    "acr_synonym": [
-      "JE:JMRC",
-      "HKI:JMRC"
-    ],
-    "active": true,
+    "active": false,
     "code": "JMRC",
     "country": "DE",
+    "deprecated": true,
     "gbif": "e195543b-f365-4a9e-ae47-c1bd5cc1f443",
-    "homepage": "https://www.mikrobiologie.uni-jena.de/en/institute/jena-microbial-resource-collection-jmrc",
     "name": "The Jena Microbial Resource Collection",
     "regex_ccno": "^JMRC\\s*\\d+$",
     "regex_id": {
