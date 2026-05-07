@@ -796,7 +796,7 @@
     "active": false,
     "code": "ZIMET",
     "country": "DE",
-    "name": "Zentralinstitut f\u00fcr Mikrobiologie und experimentelle Therapie",
+    "name": "Central institute for microbiology and experimental therapy ZIMET",
     "regex_ccno": "^ZIMET\\s*\\d+$",
     "regex_id": {
       "full": "^\\d+$"
@@ -1721,6 +1721,7 @@
       }
     ],
     "acr_synonym": [
+      "IMET:IMET",
       "ZIMET:IMET",
       "HKI:IMET"
     ],
