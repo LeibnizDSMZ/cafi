@@ -672,9 +672,6 @@
   "132": {
     "acr": "ACOI",
     "active": true,
-    "catalogue": [
-      "http://acoi.ci.uc.pt/spec_detail.php?cult_id={id}"
-    ],
     "code": "ACOI",
     "country": "PT",
     "gbif": "e3fba94d-bd32-4a35-9385-a97263f618b1",
@@ -957,7 +954,7 @@
     "code": "CRBIP:CIP",
     "country": "FR",
     "gbif": "c77394b6-3c70-40d4-94cc-dfe05ec2cfda",
-    "homepage": "https://www.pasteur.fr/en/public-health/biobanks-and-collections/collection-institut-pasteur-cip",
+    "homepage": "https://www.pasteur.fr/en/public-health/biobanks-and-collections",
     "name": "Biological Resource Center of Institut Pasteur (CRBIP): Collection of Institut Pasteur",
     "regex_ccno": "^CIP\\s*A?\\s*\\d+(\\.\\d+)?$",
     "regex_id": {
@@ -1561,15 +1558,9 @@
   "49": {
     "acr": "NCIM",
     "active": true,
-    "catalogue": [
-      "https://www.ncl-india.org/files/NCIM/CatalogueDetails.aspx?{acr}No={id}",
-      "https://www.ncl-india.org/files/NCIM/CatalogueDetails.aspx?{acr}No=*{id}",
-      "https://www.ncl-india.org/files/NCIM/CatalogueDetails.aspx?{acr}No=**{id}"
-    ],
     "code": "NCIM",
     "country": "IN",
     "gbif": "42f0bb66-a318-4b1e-800d-2f075a03060b",
-    "homepage": "https://www.ncl-india.org/files/NCIM/",
     "name": "National Collection of Industrial Microorganisms",
     "regex_ccno": "^NCIM\\s*[*]{0,2}\\d+$",
     "regex_id": {
@@ -1638,7 +1629,6 @@
     "code": "KACC",
     "country": "KR",
     "gbif": "a7bd7bea-6bf7-42dd-868c-894b0249306a",
-    "homepage": "https://genebank.rda.go.kr/eng/uat/uia/actionMain.do",
     "name": "Korean Agricultural Culture Collection",
     "regex_ccno": "^KACC\\s*\\d+$",
     "regex_id": {
@@ -1854,7 +1844,6 @@
     "code": "PTCC",
     "country": "IR",
     "gbif": "604a07c9-2419-4a12-9d03-9017d2dc97c6",
-    "homepage": "https://oldweb.irost.org/ptcc/en/about-us",
     "name": "Persian Type Culture Collection",
     "regex_ccno": "^PTCC\\s*\\d+$",
     "regex_id": {
@@ -2336,7 +2325,7 @@
     ],
     "active": true,
     "catalogue": [
-      "http://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
+      "https://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
     ],
     "code": "MTCC",
     "country": "IN",
