@@ -861,9 +861,11 @@
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute: strains from the IMET Catalog",
-    "regex_ccno": "^STI\\s*\\d+$",
+    "regex_ccno": "^STI\\s*\\d+\\s*(a|b|w|or)?$",
     "regex_id": {
-      "full": "^\\d+$"
+      "core": "\\d+",
+      "full": "^\\d+\\s*(a|b|w|or)?$",
+      "suf": "(a|b|w|or)"
     },
     "ror": "055s37c97"
   },
@@ -1459,11 +1461,12 @@
     "gbif": "e635ed6d-ff83-4253-addf-ddf6e817a6ce",
     "homepage": "https://sammlungen.uni-goettingen.de/sammlung/slg_1007/",
     "name": "Culture Collection of Algae at the University of Goettingen",
-    "regex_ccno": "^SAG\\s*\\d+([.\\/-]\\d+){0,2}\\s*[Ma-z]?$",
+    "regex_ccno": "^SAG\\s*(LZ)?\\s*\\d+([.\\/-]\\d+){0,2}\\s*[MXFa-z_]*$",
     "regex_id": {
       "core": "\\d+([.\\/-]\\d+){0,2}",
-      "full": "^\\d+([.\\/-]\\d+){0,2}\\s*[Ma-z]?$",
-      "suf": "[Ma-z]"
+      "full": "^(LZ)?\\s*\\d+([.\\/-]\\d+){0,2}\\s*[MXFa-z_]*$",
+      "pre": "LZ",
+      "suf": "[MXFa-z_]"
     }
   },
   "44": {
