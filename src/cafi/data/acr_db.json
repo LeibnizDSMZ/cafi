@@ -672,9 +672,6 @@
   "132": {
     "acr": "ACOI",
     "active": true,
-    "catalogue": [
-      "http://acoi.ci.uc.pt/spec_detail.php?cult_id={id}"
-    ],
     "code": "ACOI",
     "country": "PT",
     "gbif": "e3fba94d-bd32-4a35-9385-a97263f618b1",
@@ -789,10 +786,6 @@
         "type": "transfer"
       }
     ],
-    "acr_synonym": [
-      "HKI:ZIMET",
-      "ZIMET:ZIMET"
-    ],
     "active": false,
     "code": "ZIMET",
     "country": "DE",
@@ -822,12 +815,14 @@
   "140": {
     "acr": "ST",
     "acr_synonym": [
-      "HKI:ST"
+      "HKI:ST",
+      "JMRC:ST"
     ],
     "active": true,
     "code": "HKI:ST",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^ST\\s*\\d+$",
     "regex_id": {
@@ -838,12 +833,14 @@
   "141": {
     "acr": "SF",
     "acr_synonym": [
-      "HKI:SF"
+      "HKI:SF",
+      "JMRC:SF"
     ],
     "active": true,
     "code": "HKI:SF",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^SF\\s*\\d+$",
     "regex_id": {
@@ -854,12 +851,14 @@
   "142": {
     "acr": "STI",
     "acr_synonym": [
-      "HKI:STI"
+      "HKI:STI",
+      "JMRC:STI"
     ],
     "active": true,
     "code": "HKI:STI",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute: strains from the IMET Catalog",
     "regex_ccno": "^STI\\s*\\d+\\s*(a|b|w|or)?$",
     "regex_id": {
@@ -872,12 +871,14 @@
   "143": {
     "acr": "STH",
     "acr_synonym": [
-      "HKI:STH"
+      "HKI:STH",
+      "JMRC:STH"
     ],
     "active": true,
     "code": "HKI:STH",
     "country": "DE",
     "gbif": "7ba869f3-00a5-45ac-a640-9d831c8a4b0f",
+    "homepage": "https://www.bio.uni-jena.de/en/18579/jena-microbial-resource-collection-jmrc",
     "name": "Leibniz Institute for Natural Product Research and Infection Biology Hans Kn\u00f6ll Institute",
     "regex_ccno": "^STH\\s*\\d+$",
     "regex_id": {
@@ -955,7 +956,7 @@
     "code": "CRBIP:CIP",
     "country": "FR",
     "gbif": "c77394b6-3c70-40d4-94cc-dfe05ec2cfda",
-    "homepage": "https://www.pasteur.fr/en/public-health/biobanks-and-collections/collection-institut-pasteur-cip",
+    "homepage": "https://www.pasteur.fr/en/public-health/biobanks-and-collections",
     "name": "Biological Resource Center of Institut Pasteur (CRBIP): Collection of Institut Pasteur",
     "regex_ccno": "^CIP\\s*A?\\s*\\d+(\\.\\d+)?$",
     "regex_id": {
@@ -1560,15 +1561,9 @@
   "49": {
     "acr": "NCIM",
     "active": true,
-    "catalogue": [
-      "https://www.ncl-india.org/files/NCIM/CatalogueDetails.aspx?{acr}No={id}",
-      "https://www.ncl-india.org/files/NCIM/CatalogueDetails.aspx?{acr}No=*{id}",
-      "https://www.ncl-india.org/files/NCIM/CatalogueDetails.aspx?{acr}No=**{id}"
-    ],
     "code": "NCIM",
     "country": "IN",
     "gbif": "42f0bb66-a318-4b1e-800d-2f075a03060b",
-    "homepage": "https://www.ncl-india.org/files/NCIM/",
     "name": "National Collection of Industrial Microorganisms",
     "regex_ccno": "^NCIM\\s*[*]{0,2}\\d+$",
     "regex_id": {
@@ -1637,7 +1632,6 @@
     "code": "KACC",
     "country": "KR",
     "gbif": "a7bd7bea-6bf7-42dd-868c-894b0249306a",
-    "homepage": "https://genebank.rda.go.kr/eng/uat/uia/actionMain.do",
     "name": "Korean Agricultural Culture Collection",
     "regex_ccno": "^KACC\\s*\\d+$",
     "regex_id": {
@@ -1715,18 +1709,9 @@
     "acr": "IMET",
     "acr_changed_to": [
       {
-        "id": 1,
-        "type": "transfer"
-      },
-      {
         "id": 142,
         "type": "transfer"
       }
-    ],
-    "acr_synonym": [
-      "IMET:IMET",
-      "ZIMET:IMET",
-      "HKI:IMET"
     ],
     "active": false,
     "code": "IMET",
@@ -1862,7 +1847,6 @@
     "code": "PTCC",
     "country": "IR",
     "gbif": "604a07c9-2419-4a12-9d03-9017d2dc97c6",
-    "homepage": "https://oldweb.irost.org/ptcc/en/about-us",
     "name": "Persian Type Culture Collection",
     "regex_ccno": "^PTCC\\s*\\d+$",
     "regex_id": {
@@ -2306,15 +2290,11 @@
   },
   "89": {
     "acr": "JMRC",
-    "acr_synonym": [
-      "JE:JMRC",
-      "HKI:JMRC"
-    ],
-    "active": true,
+    "active": false,
     "code": "JMRC",
     "country": "DE",
+    "deprecated": true,
     "gbif": "e195543b-f365-4a9e-ae47-c1bd5cc1f443",
-    "homepage": "https://www.mikrobiologie.uni-jena.de/en/institute/jena-microbial-resource-collection-jmrc",
     "name": "The Jena Microbial Resource Collection",
     "regex_ccno": "^JMRC\\s*\\d+$",
     "regex_id": {
@@ -2348,7 +2328,7 @@
     ],
     "active": true,
     "catalogue": [
-      "http://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
+      "https://mtccindia.res.in/catalog?orgnism=All&strain_type=All&supply_list=All&advance_feature=Yes&mtcc_no={id}&search_result=Search"
     ],
     "code": "MTCC",
     "country": "IN",
