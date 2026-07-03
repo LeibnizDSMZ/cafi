@@ -1,3 +1,16 @@
+## v0.12.0 (2026-07-03)
+
+### Feat
+
+- **acr_db.json,-regex_db.json**: reduce added HKI acronyms to recognizable
+- **acr_db.json,-regex_db.json**: add historic and current acronyms of HKI
+
+### Fix
+
+- correct some urls
+- correct jmrc acronym
+- **acr_db.json,-regex_db.json**: add missing suffixes for HKI:STI
+
 ## v0.11.1 (2026-04-09)
 
 ### Refactor
