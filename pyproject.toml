@@ -8,7 +8,7 @@ license = "MIT"
 keywords = ["python", "data", "culture collection", "acronym"]
 requires-python = ">=3.13,<4"
 
-dependencies = ["pydantic ==2.12.5", "requests ==2.33.1"]
+dependencies = ["pydantic >=2.12,<3", "requests >=2.33,<3"]
 
 [project.scripts]
 acr_db = "cafi.main:run"
