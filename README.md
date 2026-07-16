@@ -7,7 +7,7 @@
 
 [![main](https://github.com/LeibnizDSMZ/cafi/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/LeibnizDSMZ/cafi/actions/workflows/main.yml)
 
-[![DOI](https://zenodo.org/badge/638857356.svg)](https://doi.org/10.5281/zenodo.14872268)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14872268.svg)](https://doi.org/10.5281/zenodo.14872268)
 
 ---
 
